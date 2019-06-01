@@ -81,7 +81,19 @@ def image_align(img,base=4):
     #print ('after alignment, row = %d, col = %d'%(img.shape[0], img.shape[1]))
     return img
 
-def train_epoch():
+def train_epoch(model:tuple, optimizer:tuple, dataloader:Dataloader, loss:tuple, 
+                metric:tuple,writer=None,loss_ratio=1):
+    """ Train a single epoch. 
+    :param model
+    :param optimizer
+    :param dataloader
+    :param loss
+    :param metric
+    :param writer
+    :param loss_ratio
+    :return None
+    """
+    
     pass
 
 def train(args):
@@ -90,6 +102,8 @@ def train(args):
     if args.mode == 'continue':
         generate_model = generate_model.load_state_dict(torch.load(opj(args.model_dir,args.g_weights)) )
         discriminate_model = discriminate_model.load_state_dict(torch.load(opj(args.model_dir,args.d_weights)))
+    model = (generate_model,discriminate_model)
+
     data = RainDataSet(args.input_dir)
     train_data = data.get_train()
     test_data = data.get_test()
@@ -99,9 +113,9 @@ def train(args):
     beta1 = 0.9
     beta2 = 0.999
     G_optimizer = optim.Adam(filter(lambda p: p.requires_grad, model.parameters()), 
-                            lr=opt.lr, weight_decay=weight_decay, betas=(beta1, beta2))
+                            lr=args.learning_rate, weight_decay=args.weight_decay, betas=(beta1, beta2))
     D_optimizer = optim.Adam(filter(lambda p: p.requires_grad, model.parameters()), 
-                            lr=opt.lr, weight_decay=weight_decay, betas=(beta1, beta2))
+                            lr=args.learning_rate, weight_decay=args.weight_decay, betas=(beta1, beta2))
     optimizer = (G_optimizer, D_optimizer)
     
     G_Loss = GeneratorLoss()
@@ -110,9 +124,7 @@ def train(args):
 
     ssim_criterion = SSIM()
     psnr_criterion = PSNR()
-
     metric = (ssim_criterion,psnr_criterion)
-
 
     for epoch in args.epochs:
         start_time = time.time()
@@ -121,13 +133,10 @@ def train(args):
         for param_group in optimizer.param_groups:
             param_group["lr"] = current_lr
         print("Train_epoch_{0}: learning_rate= {1}".format(epoch,current_lr))
-        model = (generate_model,discriminate_model)
-
         train_epoch(model,optimizer,train_loader,loss,metric)
-
         print(' Train_epoch_{0} : G_Loss= {:.5f}; D_Loss= {:.5f}; '
-                'SSIM= {:.5f}; PSNR= {:.5f}'.format(epoch,G_Loss.item(),
-                D_Loss.item(),ssim_criterion.item(),psnr_criterion.item()))
+                'SSIM= {:.5f}; PSNR= {:.5f}'.format(epoch,loss[0].item(),
+                loss[1].item(),metric[0].item(),metric[1].item()))
 
 
 def predict_single(model,image):
