@@ -115,15 +115,17 @@ def train_epoch(model:tuple, optimizer:tuple, dataloader:Dataloader,epoch, crite
         g_optimizer.zero_grad()
         input_data,mask_data,gt_data = data[0],data[1],data[2]
         mask_list, skip1, skip2, g_output = g_model.forward(input_data)
-        g_loss,attentive_rnn_loss,autoencoder_loss = g_criterion(mask_list,mask_data,gt_data) #generate two loss
+        g_loss,interlosses = g_criterion(mask_list,mask_data,gt_data
+                                                                [skip1, skip2, g_output]) #generate two loss
         g_loss.backward()
         g_optimizer.step()
         g_loss_list.append(g_loss)
 
         d_model.zero_grad()
         d_optimizer.zero_grad()
-        mask, d_output = d_model(g_output)
-        d_loss,map_loss = d_criterion(mask,mask_list[-1],gt_data) #here we will call forward with gt_data
+        mask1, d_output1 = d_model(g_output)
+        mask2, d_output2 = d_model(gt_data)
+        d_loss,map_loss = d_criterion(mask1,d_output1,mask2,d_output2,mask_list[-1]) #here we will call forward with gt_data
         d_loss.backward()
         d_optimizer.step()
         d_loss_list.append(d_loss)
