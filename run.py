@@ -24,11 +24,11 @@ from models import *
 #dataset lib
 from dataset import RainDataSet
 #Metrics lib
-from metrics import calc_psnr, calc_ssim
+from metrics import calc_psnr, calc_ssim,SSIM,PSNR
 
 from pytorch.models import Discriminator,Generator
 from pytorch.dataset import RainDataSet
-from pytorch.metrics import calc_psnr,calc_ssim
+from pytorch.metrics import calc_psnr, calc_ssim, SSIM, PSNR
 
 def get_args():
     parser = argparse.ArgumentParser()
@@ -153,9 +153,9 @@ def train(args):
 
     data = RainDataSet(args.input_dir)
     train_data = data.get_train()
-    test_data = data.get_test()
     train_loader = Dataloader(train_data,batch_size=args.batch_size,shuffle=True,num_workers=0)
-    test_loader = Dataloader(test_data,batch_size=args.batch_size,shuffle=False,num_workers=0)
+    # test_data = data.get_test()
+    # test_loader = Dataloader(test_data,batch_size=args.batch_size,shuffle=False,num_workers=0)
 
     beta1 = 0.9
     beta2 = 0.999
@@ -192,10 +192,10 @@ def train(args):
                 'SSIM= {:.5f}; PSNR= {:.5f}'.format(epoch,loss[0].item(),
                 loss[1].item(),acc[0].item(),acc[1].item()))
         if epoch % args.evaluate_every:
-            evaluate()
+            evaluate(model,args)
 
 
-def evaluate():
+def evaluate(model,args):
     print("Not Implement Error.")
     pass
 
