@@ -63,9 +63,10 @@ def get_args():
                                 help='evaluate the model every n epochs.')
 
     path_settings = parser.add_argument_group('path settings')
-    parser.add_argument("--input_dir", type=str,default="../data/demo/input/raw")
-    parser.add_argument("--gt_dir", type=str,default="../data/demo/input/gt")
-    parser.add_argument("--output_dir", type=str,default="../data/demo/output")
+    parser.add_argument("--input_dir", type=str,default="../data/demo/train/raw")
+    parser.add_argument("--gt_dir", type=str,default="../data/demo/train/gt")
+    parser.add_argument("--mask_dir", type=str,default="../data/demo/train/mask")
+    parser.add_argument("--output_dir", type=str,default="../data/demo/train/output")
     parser.add_argument("model_dir",type=str,default="./weights",
                         help= "the dir to store the model(weights) after train progress.")
     parser.add_argument("--g_weights",type=str,default="gen.pkl",
@@ -156,7 +157,7 @@ def train(args):
         discriminate_model = discriminate_model.load_state_dict(torch.load(opj(args.model_dir,args.d_weights)))
     model = (generate_model,discriminate_model)
 
-    train_data = RainDataSet(args.input_dir)
+    train_data = RainDataSet(args.input_dir,args.gt_dir,args.mask_dir)
     train_loader = Dataloader(train_data,batch_size=args.batch_size,shuffle=True,num_workers=0)
     # test_data = data.get_test()
     # test_loader = Dataloader(test_data,batch_size=args.batch_size,shuffle=False,num_workers=0)
