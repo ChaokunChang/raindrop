@@ -25,10 +25,13 @@ from models import *
 from dataset import RainDataSet
 #Metrics lib
 from metrics import calc_psnr, calc_ssim,SSIM,PSNR
+#Losses lib
+from losses import GeneratorLoss,DiscriminatorLoss
 
 from pytorch.models import Discriminator,Generator
 from pytorch.dataset import RainDataSet
 from pytorch.metrics import calc_psnr, calc_ssim, SSIM, PSNR
+from pytorch.losses import GeneratorLoss,DiscriminatorLoss
 
 def get_args():
     parser = argparse.ArgumentParser()
@@ -113,7 +116,7 @@ def train_epoch(model:tuple, optimizer:tuple, dataloader:Dataloader,epoch, crite
     for i,data in enumerate(dataloader):
         g_model.zero_grad()
         g_optimizer.zero_grad()
-        input_data,mask_data,gt_data = data[0],data[1],data[2]
+        input_data,gt_data,mask_data = data[0],data[1],data[2]
         mask_list, skip1, skip2, g_output = g_model.forward(input_data)
         g_loss,interlosses = g_criterion(mask_list,mask_data,gt_data
                                                                 [skip1, skip2, g_output]) #generate two loss
@@ -153,8 +156,7 @@ def train(args):
         discriminate_model = discriminate_model.load_state_dict(torch.load(opj(args.model_dir,args.d_weights)))
     model = (generate_model,discriminate_model)
 
-    data = RainDataSet(args.input_dir)
-    train_data = data.get_train()
+    train_data = RainDataSet(args.input_dir)
     train_loader = Dataloader(train_data,batch_size=args.batch_size,shuffle=True,num_workers=0)
     # test_data = data.get_test()
     # test_loader = Dataloader(test_data,batch_size=args.batch_size,shuffle=False,num_workers=0)
