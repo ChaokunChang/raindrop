@@ -47,6 +47,10 @@ class Discriminator(nn.Module):
             nn.Conv2d(128, 64, 5, 4, 1),
             nn.ReLU()
             )
+        # self.conv72 = nn.Sequential(
+        #     nn.Conv2d(64, 64, 5, 4, 1),
+        #     nn.ReLU()
+        #     )
         self.conv8 = nn.Sequential(
             nn.Conv2d(64, 32, 5, 4, 1),
             nn.ReLU()
@@ -66,7 +70,7 @@ class Discriminator(nn.Module):
         x = self.conv6(x)
         mask = self.conv_mask(x)
         x = self.conv7(x * mask)
-        x = self.conv7(x)
+        # x = self.conv7(x)
         x = self.conv8(x)
         x = x.view(x.size(0), -1)
         return mask, self.fc(x)

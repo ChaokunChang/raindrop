@@ -2,10 +2,9 @@
 import torch
 import torch.nn as nn
 from torch.autograd import Variable
-import torch.utils.data as Data
 import torch.nn.functional as F
 import torchvision
-from torch.utils.data import Dataloader
+from torch.utils.data import DataLoader
 from torch import optim
 #Tools lib
 import numpy as np
@@ -24,14 +23,17 @@ from models import *
 #dataset lib
 from dataset import RainDataSet
 #Metrics lib
-from metrics import calc_psnr, calc_ssim,SSIM,PSNR
+from metrics import calc_psnr, calc_ssim,psnr_ssim_metric
+# from metrics SSIM,PSNR
 #Losses lib
 from losses import GeneratorLoss,DiscriminatorLoss
-
-from pytorch.models import Discriminator,Generator
-from pytorch.dataset import RainDataSet
-from pytorch.metrics import calc_psnr, calc_ssim, SSIM, PSNR
-from pytorch.losses import GeneratorLoss,DiscriminatorLoss
+# Tranforms lib
+from utils.transforms import demo_transform1,demo_transform2,image_align
+# from pytorch.models import Discriminator,Generator
+# from pytorch.dataset import RainDataSet
+# from pytorch.metrics import calc_psnr, calc_ssim, SSIM, PSNR
+# from pytorch.losses import GeneratorLoss,DiscriminatorLoss
+# from pytorch.utils.transforms import demo_transform1,demo_transform2,image_align
 
 def get_args():
     parser = argparse.ArgumentParser()
@@ -53,7 +55,7 @@ def get_args():
                                 help='weight decay')
     train_settings.add_argument('--dropout_keep_prob', type=float, default=1,
                                 help='dropout keep rate')
-    train_settings.add_argument('--batch_size', type=int, default=32,
+    train_settings.add_argument('--batch_size', type=int, default=1,
                                 help='train batch size')
     train_settings.add_argument('--epochs', type=int, default=10,
                                 help='train epochs')
@@ -67,7 +69,7 @@ def get_args():
     parser.add_argument("--gt_dir", type=str,default="../data/demo/train/gt")
     parser.add_argument("--mask_dir", type=str,default="../data/demo/train/mask")
     parser.add_argument("--output_dir", type=str,default="../data/demo/train/output")
-    parser.add_argument("model_dir",type=str,default="./weights",
+    parser.add_argument("--model_dir",type=str, default="weights",
                         help= "the dir to store the model(weights) after train progress.")
     parser.add_argument("--g_weights",type=str,default="gen.pkl",
                         help='the file of weights to load in train progress.')
@@ -81,16 +83,7 @@ def get_args():
     args = parser.parse_args()
     return args
 
-def image_align(img,base=4):
-    #print ('before alignment, row = %d, col = %d'%(img.shape[0], img.shape[1]))
-    #align to four
-    a_row = int(img.shape[0]/4)*4
-    a_col = int(img.shape[1]/4)*4
-    img = img[0:a_row, 0:a_col]
-    #print ('after alignment, row = %d, col = %d'%(img.shape[0], img.shape[1]))
-    return img
-
-def train_epoch(model:tuple, optimizer:tuple, dataloader:Dataloader,epoch, criterion:tuple, 
+def train_epoch(model:tuple, optimizer:tuple, dataloader:DataLoader,epoch, criterion:tuple, 
                 metric:tuple,args,writer=None):
     """ Train a single epoch.
     :param model
@@ -105,68 +98,82 @@ def train_epoch(model:tuple, optimizer:tuple, dataloader:Dataloader,epoch, crite
     g_model,d_model = model
     g_optimizer,d_optimizer = optimizer
     g_criterion,d_criterion = criterion
-    ssim_metric,psnr_metric = metric
+    # ssim_metric,psnr_metric = metric
 
     data_num = len(dataloader)
     # First we train the generative model.
     # and then we train the discrimnative model
-    g_model.train()
-    d_model.train()
     g_loss_list=[]
     d_loss_list=[]
+    psnr_loss = 0
+    ssim_loss = 0
     for i,data in enumerate(dataloader):
+        g_model.train()
         g_model.zero_grad()
         g_optimizer.zero_grad()
+        
+        # input_data,gt_data,mask_data = torch.squeeze(data[0],0),torch.squeeze(data[1],0),torch.squeeze(data[2],0)
         input_data,gt_data,mask_data = data[0],data[1],data[2]
         mask_list, skip1, skip2, g_output = g_model.forward(input_data)
-        g_loss,interlosses = g_criterion(mask_list,mask_data,gt_data
-                                                                [skip1, skip2, g_output]) #generate two loss
-        g_loss.backward()
+        # print("g_output:",g_output.size())
+        g_loss,interlosses = g_criterion(mask_list,mask_data,gt_data,
+                                        [skip1, skip2, g_output]) #generate two loss
+        #g_loss.backward(retain_graph=True)
+        g_loss.backward()        
         g_optimizer.step()
         g_loss_list.append(g_loss)
 
+        d_model.train()
         d_model.zero_grad()
         d_optimizer.zero_grad()
-        mask1, d_output1 = d_model(g_output)
+        mask1, d_output1 = d_model(g_output.detach_())
         mask2, d_output2 = d_model(gt_data)
-        d_loss,map_loss = d_criterion(mask1,d_output1,mask2,d_output2,mask_list[-1]) #here we will call forward with gt_data
+        d_loss,map_loss = d_criterion(mask1,d_output1,mask2,d_output2,mask_list[-1].detach_()) #here we will call forward with gt_data
         d_loss.backward()
+
         d_optimizer.step()
         d_loss_list.append(d_loss)
-
+        torch.cuda.empty_cache()
         if i % args.show_every_nsteps == 0:
             with torch.no_grad():
-                ssim_loss = ssim_metric(gt_data,g_output)
-                psnr_loss = psnr_metric(gt_data,g_output)
+                # print(gt_data.size())
+                # print(g_output.size())
+                
+                psnr_loss,ssim_loss = metric(gt_data,g_output.detach())
                 print('epoch {}, [{}/{}], loss ({},{}), PSNR {}, SSIM {},'.format
-                (epoch, i, data_num, g_loss,d_loss, psnr_loss, ssim_loss))
+                (epoch, i, data_num, g_loss.data,d_loss.data, psnr_loss, ssim_loss))
                 if writer is not None:
                     step = epoch * data_num + i
                     writer.add_scalar('G_Loss', g_loss.item(), step)
                     writer.add_scalar('D_Loss', d_loss.item(), step)
                     writer.add_scalar('SSIM', ssim_loss.item(), step)
                     writer.add_scalar('PSNR', psnr_loss.item(), step)
-    return (np.mean(g_loss_list),np.mean(d_loss_list)),(ssim_loss,psnr_loss)
+    r_g_loss = torch.mean(torch.stack(g_loss_list))
+    r_d_loss = torch.mean(torch.stack(d_loss_list))
+    return r_g_loss,r_d_loss,ssim_loss,psnr_loss
 
 
 def train(args):
     generate_model = Generator().cuda()
-    discriminate_model = Discriminator.cuda()
+    discriminate_model = Discriminator().cuda()
     if args.mode == 'continue':
         generate_model = generate_model.load_state_dict(torch.load(opj(args.model_dir,args.g_weights)) )
         discriminate_model = discriminate_model.load_state_dict(torch.load(opj(args.model_dir,args.d_weights)))
     model = (generate_model,discriminate_model)
 
+    # i_transform = demo_input_transform()
+    # t_transform = demo_target_transform()
+
     train_data = RainDataSet(args.input_dir,args.gt_dir,args.mask_dir)
-    train_loader = Dataloader(train_data,batch_size=args.batch_size,shuffle=True,num_workers=0)
+    train_loader = DataLoader(train_data,batch_size=args.batch_size,shuffle=True,num_workers=0)
     # test_data = data.get_test()
-    # test_loader = Dataloader(test_data,batch_size=args.batch_size,shuffle=False,num_workers=0)
+    # test_loader = DataLoader(test_data,batch_size=args.batch_size,shuffle=False,num_workers=0)
 
     beta1 = 0.9
     beta2 = 0.999
-    G_optimizer = optim.Adam(filter(lambda p: p.requires_grad, model.parameters()),
+    G_optimizer = optim.Adam(filter(lambda p: p.requires_grad, model[0].parameters()),
                             lr=args.learning_rate, weight_decay=args.weight_decay, betas=(beta1, beta2))
-    D_optimizer = optim.Adam(filter(lambda p: p.requires_grad, model.parameters()),
+    D_optimizer = optim.Adam(filter(lambda p: p.requires_grad, model[1].parameters()),
                             lr=args.learning_rate, weight_decay=args.weight_decay, betas=(beta1, beta2))
     optimizer = (G_optimizer, D_optimizer)
 
@@ -174,28 +181,31 @@ def train(args):
     D_criterion = DiscriminatorLoss()
     criterion = (G_criterion,D_criterion)
 
-    ssim_criterion = SSIM()
-    psnr_criterion = PSNR()
-    metric = (ssim_criterion,psnr_criterion)
+    # ssim_criterion = SSIM()
+    # psnr_criterion = PSNR()
+    # ssim_criterion = calc_psnr
+    # psnr_criterion = calc_ssim
+    # metric = (ssim_criterion,psnr_criterion)
+    metric = psnr_ssim_metric
 
-    summary_file =  'DRNet_{}_{}_{}_{}_{}_{}'.format(args.learning_rate, args.weight_decay,
-                    args.radio,args.batch_size,args.interval)
+    summary_file = 'DRNet_{}_{}_{}_{}_{}'.format(args.learning_rate, args.weight_decay,
+                    args.batch_size,args.ratio,args.interval)
     summary_path = opj(args.summary_dir,summary_file)
     print("The summary is stored in {}".format(summary_path))
     writer = SummaryWriter(summary_path)
 
-    for epoch in args.epochs:
+    for epoch in range(args.epochs):
         start_time = time.time()
-        metric[0].reset()
-        metric[1].reset()
+        # metric[0].reset()
+        # metric[1].reset()
         current_lr = args.learning_rate / 2**int(epoch/args.interval)
-        for param_group in optimizer.param_groups:
+        for param_group in optimizer[0].param_groups:
+            param_group["lr"] = current_lr
+        for param_group in optimizer[1].param_groups:
             param_group["lr"] = current_lr
         print("Train_epoch_{0}: learning_rate= {1}".format(epoch,current_lr))
-        loss,acc = train_epoch(model,optimizer,train_loader,epoch,criterion,metric,args,writer=writer)
-        print(' Train_epoch_{0} : G_Loss= {:.5f}; D_Loss= {:.5f}; '
-                'SSIM= {:.5f}; PSNR= {:.5f}'.format(epoch,loss[0].item(),
-                loss[1].item(),acc[0].item(),acc[1].item()))
+        loss1,loss2,acc1,acc2 = train_epoch(model,optimizer,train_loader,epoch,criterion,metric,args,writer=writer)
+        print("Train_epoch_{:d} : G_Loss= {:.5f}; D_Loss= {:.5f}; SSIM= {:.5f}; PSNR= {:.5f}".format(epoch,loss1.data,loss2.data,acc1,acc2))
         if epoch % args.evaluate_every:
             evaluate(model,args)
 
@@ -264,8 +274,12 @@ def run():
     args = get_args()
 
     if args.train:
+        print("Trianning")
         train(args)
     elif args.predict:
         predict(args)
     else:
         print("You won't run.")
+
+if __name__ == "__main__":
+    run()
