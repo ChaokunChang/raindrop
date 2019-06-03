@@ -1,86 +1,751 @@
 Trianning
 The summary is stored in ../data/summary/DRNet_0.001_0_1_20_20
 Train_epoch_0: learning_rate= 0.001
-epoch 0, [0/34], loss (tensor([8.7637], device='cuda:0'),tensor([0.0003], device='cuda:0')), PSNR inf, SSIM 1.0,
+epoch 0, [0/34], loss (tensor([8.6100], device='cuda:0'),tensor([0.0001], device='cuda:0')), PSNR 70.87065136171661, SSIM 0.9995346685607213,
+epoch 0, [10/34], loss (tensor([3.2505], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR inf, SSIM 1.0,
 Warning: NaN or Inf found in input tensor.
-epoch 0, [10/34], loss (tensor([4.6165], device='cuda:0'),tensor([8.2591e-05], device='cuda:0')), PSNR inf, SSIM 1.0,
+epoch 0, [20/34], loss (tensor([6.2574], device='cuda:0'),tensor([0.0004], device='cuda:0')), PSNR 71.49964417644091, SSIM 0.9995402132864232,
+epoch 0, [30/34], loss (tensor([5.8215], device='cuda:0'),tensor([0.0003], device='cuda:0')), PSNR inf, SSIM 1.0,
 Warning: NaN or Inf found in input tensor.
-epoch 0, [20/34], loss (tensor([3.2151], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR inf, SSIM 1.0,
-Warning: NaN or Inf found in input tensor.
-epoch 0, [30/34], loss (tensor([6.2746], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR 67.12172687518881, SSIM 0.9991445468368861,
-Train_epoch_0 : G_Loss= 5.16123; D_Loss= 0.00029; SSIM= 0.99914; PSNR= 67.12173
+Train_epoch_0 : G_Loss= 5.41230; D_Loss= 0.00067; SSIM= 1.00000; PSNR= inf
 Train_epoch_1: learning_rate= 0.001
-epoch 1, [0/34], loss (tensor([3.6645], device='cuda:0'),tensor([0.0007], device='cuda:0')), PSNR inf, SSIM 1.0,
+epoch 1, [0/34], loss (tensor([3.5098], device='cuda:0'),tensor([0.0001], device='cuda:0')), PSNR 64.29715596669664, SSIM 0.9975517607004573,
+epoch 1, [10/34], loss (tensor([3.5228], device='cuda:0'),tensor([2.9575e-05], device='cuda:0')), PSNR inf, SSIM 1.0,
 Warning: NaN or Inf found in input tensor.
-epoch 1, [10/34], loss (tensor([6.0239], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR 80.36455142816573, SSIM 0.9999763176946915,
-epoch 1, [20/34], loss (tensor([4.8089], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR inf, SSIM 1.0,
+epoch 1, [20/34], loss (tensor([2.9092], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR 81.33365155824629, SSIM 0.9999796473323096,
+epoch 1, [30/34], loss (tensor([3.2953], device='cuda:0'),tensor([0.0003], device='cuda:0')), PSNR inf, SSIM 1.0,
 Warning: NaN or Inf found in input tensor.
-epoch 1, [30/34], loss (tensor([4.5401], device='cuda:0'),tensor([8.8708e-05], device='cuda:0')), PSNR 67.50148403973299, SSIM 0.9991699970081515,
-Train_epoch_1 : G_Loss= 4.03971; D_Loss= 0.00017; SSIM= 0.99917; PSNR= 67.50148
-Not Implement Error.
+Train_epoch_1 : G_Loss= 3.74133; D_Loss= 0.00021; SSIM= 1.00000; PSNR= inf
 Train_epoch_2: learning_rate= 0.001
-epoch 2, [0/34], loss (tensor([2.3832], device='cuda:0'),tensor([3.2732e-05], device='cuda:0')), PSNR 56.17215552066919, SSIM 0.9808476102332204,
-epoch 2, [10/34], loss (tensor([3.9752], device='cuda:0'),tensor([0.0004], device='cuda:0')), PSNR 66.24274695029926, SSIM 0.9988725014116723,
-epoch 2, [20/34], loss (tensor([3.0584], device='cuda:0'),tensor([6.9172e-05], device='cuda:0')), PSNR 70.12517135318484, SSIM 0.9997831350453229,
-epoch 2, [30/34], loss (tensor([2.4803], device='cuda:0'),tensor([3.4269e-05], device='cuda:0')), PSNR 53.92312092306654, SSIM 0.9692126433311713,
-Train_epoch_2 : G_Loss= 3.32968; D_Loss= 0.00018; SSIM= 0.96921; PSNR= 53.92312
-Not Implement Error.
+epoch 2, [0/34], loss (tensor([0.9217], device='cuda:0'),tensor([0.0012], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 2, [10/34], loss (tensor([2.9645], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 2, [20/34], loss (tensor([4.9365], device='cuda:0'),tensor([0.0003], device='cuda:0')), PSNR 71.49964417644091, SSIM 0.9995402132864232,
+epoch 2, [30/34], loss (tensor([3.3528], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR 70.87065136171661, SSIM 0.9995346685607213,
+Train_epoch_2 : G_Loss= 3.14894; D_Loss= 0.00022; SSIM= 0.99953; PSNR= 70.87065
 Train_epoch_3: learning_rate= 0.001
-epoch 3, [0/34], loss (tensor([2.5201], device='cuda:0'),tensor([0.0006], device='cuda:0')), PSNR 71.75119903931632, SSIM 0.9998138667428736,
-epoch 3, [10/34], loss (tensor([3.1950], device='cuda:0'),tensor([0.0005], device='cuda:0')), PSNR 55.227049927347494, SSIM 0.9763300584181335,
-epoch 3, [20/34], loss (tensor([2.2334], device='cuda:0'),tensor([0.0010], device='cuda:0')), PSNR 70.40819948219023, SSIM 0.9996992692552945,
-epoch 3, [30/34], loss (tensor([2.8360], device='cuda:0'),tensor([0.0004], device='cuda:0')), PSNR 64.31869127438887, SSIM 0.997674077322874,
-Train_epoch_3 : G_Loss= 3.16082; D_Loss= 0.00079; SSIM= 0.99767; PSNR= 64.31869
-Not Implement Error.
+epoch 3, [0/34], loss (tensor([2.5214], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR 95.13576397536235, SSIM 0.9999995745580431,
+epoch 3, [10/34], loss (tensor([2.6933], device='cuda:0'),tensor([0.0016], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 3, [20/34], loss (tensor([1.1047], device='cuda:0'),tensor([0.0003], device='cuda:0')), PSNR 51.90510021172332, SSIM 0.9445285706350924,
+epoch 3, [30/34], loss (tensor([4.9122], device='cuda:0'),tensor([4.2923e-05], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+Train_epoch_3 : G_Loss= 2.74992; D_Loss= 0.00055; SSIM= 1.00000; PSNR= inf
 Train_epoch_4: learning_rate= 0.001
-epoch 4, [0/34], loss (tensor([2.7311], device='cuda:0'),tensor([0.0003], device='cuda:0')), PSNR 73.43314682141279, SSIM 0.9999267692470376,
-epoch 4, [10/34], loss (tensor([1.8955], device='cuda:0'),tensor([0.0006], device='cuda:0')), PSNR inf, SSIM 1.0,
+epoch 4, [0/34], loss (tensor([1.6005], device='cuda:0'),tensor([4.7137e-05], device='cuda:0')), PSNR inf, SSIM 1.0,
 Warning: NaN or Inf found in input tensor.
-epoch 4, [20/34], loss (tensor([1.3266], device='cuda:0'),tensor([0.0007], device='cuda:0')), PSNR 51.90510021172332, SSIM 0.9445285706350924,
-epoch 4, [30/34], loss (tensor([3.0618], device='cuda:0'),tensor([0.0003], device='cuda:0')), PSNR 81.33365155824629, SSIM 0.9999796473323096,
-Train_epoch_4 : G_Loss= 2.92369; D_Loss= 0.00051; SSIM= 0.99998; PSNR= 81.33365
-Not Implement Error.
+epoch 4, [10/34], loss (tensor([3.3217], device='cuda:0'),tensor([3.6358e-05], device='cuda:0')), PSNR 92.12546401872254, SSIM 0.9999991205422724,
+epoch 4, [20/34], loss (tensor([2.9006], device='cuda:0'),tensor([3.9998e-05], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 4, [30/34], loss (tensor([2.7144], device='cuda:0'),tensor([6.2761e-05], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+Train_epoch_4 : G_Loss= 2.51682; D_Loss= 0.00015; SSIM= 1.00000; PSNR= inf
 Train_epoch_5: learning_rate= 0.001
-epoch 5, [0/34], loss (tensor([3.0127], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR 71.49964417644091, SSIM 0.9998988516171777,
-epoch 5, [10/34], loss (tensor([1.6642], device='cuda:0'),tensor([0.0008], device='cuda:0')), PSNR inf, SSIM 1.0,
+epoch 5, [0/34], loss (tensor([5.1480], device='cuda:0'),tensor([2.1885e-05], device='cuda:0')), PSNR inf, SSIM 1.0,
 Warning: NaN or Inf found in input tensor.
-epoch 5, [20/34], loss (tensor([2.9183], device='cuda:0'),tensor([0.0005], device='cuda:0')), PSNR inf, SSIM 1.0,
+epoch 5, [10/34], loss (tensor([1.3329], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR inf, SSIM 1.0,
 Warning: NaN or Inf found in input tensor.
-epoch 5, [30/34], loss (tensor([2.7296], device='cuda:0'),tensor([0.0004], device='cuda:0')), PSNR 81.33365155824629, SSIM 0.9999796473323096,
-Train_epoch_5 : G_Loss= 2.73187; D_Loss= 0.00063; SSIM= 0.99998; PSNR= 81.33365
-Not Implement Error.
+epoch 5, [20/34], loss (tensor([3.1011], device='cuda:0'),tensor([3.7659e-05], device='cuda:0')), PSNR 70.87065136171661, SSIM 0.9995346685607213,
+epoch 5, [30/34], loss (tensor([0.9266], device='cuda:0'),tensor([1.7043e-05], device='cuda:0')), PSNR 51.90510021172332, SSIM 0.9445285706350924,
+Train_epoch_5 : G_Loss= 2.38916; D_Loss= 0.00014; SSIM= 0.94453; PSNR= 51.90510
 Train_epoch_6: learning_rate= 0.001
-epoch 6, [0/34], loss (tensor([2.6758], device='cuda:0'),tensor([0.0005], device='cuda:0')), PSNR inf, SSIM 1.0,
+epoch 6, [0/34], loss (tensor([2.5859], device='cuda:0'),tensor([7.3397e-05], device='cuda:0')), PSNR 80.36455142816573, SSIM 0.9999763176946915,
+epoch 6, [10/34], loss (tensor([0.7063], device='cuda:0'),tensor([0.0016], device='cuda:0')), PSNR inf, SSIM 1.0,
 Warning: NaN or Inf found in input tensor.
-epoch 6, [10/34], loss (tensor([2.1768], device='cuda:0'),tensor([0.0003], device='cuda:0')), PSNR 92.12546401872254, SSIM 0.9999995924747447,
-epoch 6, [20/34], loss (tensor([1.8591], device='cuda:0'),tensor([0.0001], device='cuda:0')), PSNR 95.13576397536235, SSIM 0.9999995745580431,
-epoch 6, [30/34], loss (tensor([3.5316], device='cuda:0'),tensor([0.0012], device='cuda:0')), PSNR 59.18962888376137, SSIM 0.9909894847859523,
-Train_epoch_6 : G_Loss= 2.52891; D_Loss= 0.00073; SSIM= 0.99099; PSNR= 59.18963
-Not Implement Error.
+epoch 6, [20/34], loss (tensor([1.3631], device='cuda:0'),tensor([0.0010], device='cuda:0')), PSNR 81.33365155824629, SSIM 0.9999796473323096,
+epoch 6, [30/34], loss (tensor([0.7522], device='cuda:0'),tensor([0.0004], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+Train_epoch_6 : G_Loss= 2.43080; D_Loss= 0.00062; SSIM= 1.00000; PSNR= inf
 Train_epoch_7: learning_rate= 0.001
-epoch 7, [0/34], loss (tensor([1.8368], device='cuda:0'),tensor([0.0007], device='cuda:0')), PSNR inf, SSIM 1.0,
+epoch 7, [0/34], loss (tensor([5.1834], device='cuda:0'),tensor([4.3049e-05], device='cuda:0')), PSNR inf, SSIM 1.0,
 Warning: NaN or Inf found in input tensor.
-epoch 7, [10/34], loss (tensor([2.0929], device='cuda:0'),tensor([0.0008], device='cuda:0')), PSNR inf, SSIM 1.0,
-Warning: NaN or Inf found in input tensor.
-epoch 7, [20/34], loss (tensor([2.9782], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR 92.12546401872254, SSIM 0.9999991205422724,
-epoch 7, [30/34], loss (tensor([1.6202], device='cuda:0'),tensor([0.0003], device='cuda:0')), PSNR 67.10119281887822, SSIM 0.9991436959529725,
-Train_epoch_7 : G_Loss= 2.49747; D_Loss= 0.00040; SSIM= 0.99914; PSNR= 67.10119
-Not Implement Error.
+epoch 7, [10/34], loss (tensor([3.6919], device='cuda:0'),tensor([0.0012], device='cuda:0')), PSNR 71.425085352645, SSIM 0.999539463825685,
+epoch 7, [20/34], loss (tensor([3.0200], device='cuda:0'),tensor([0.0004], device='cuda:0')), PSNR 90.36455142816573, SSIM 0.9999986951003155,
+epoch 7, [30/34], loss (tensor([0.4115], device='cuda:0'),tensor([7.6760e-05], device='cuda:0')), PSNR 83.0945641488031, SSIM 0.9999979968606855,
+Train_epoch_7 : G_Loss= 2.22897; D_Loss= 0.00049; SSIM= 1.00000; PSNR= 83.09456
 Train_epoch_8: learning_rate= 0.001
-epoch 8, [0/34], loss (tensor([1.4351], device='cuda:0'),tensor([0.0004], device='cuda:0')), PSNR inf, SSIM 1.0,
+epoch 8, [0/34], loss (tensor([0.5744], device='cuda:0'),tensor([0.0003], device='cuda:0')), PSNR 71.29761031555805, SSIM 0.99994712051662,
+epoch 8, [10/34], loss (tensor([0.9871], device='cuda:0'),tensor([0.0004], device='cuda:0')), PSNR inf, SSIM 1.0,
 Warning: NaN or Inf found in input tensor.
-epoch 8, [10/34], loss (tensor([3.2492], device='cuda:0'),tensor([0.0005], device='cuda:0')), PSNR 70.87065136171661, SSIM 0.9995346685607213,
-epoch 8, [20/34], loss (tensor([1.6341], device='cuda:0'),tensor([4.4549e-05], device='cuda:0')), PSNR inf, SSIM 1.0,
-Warning: NaN or Inf found in input tensor.
-epoch 8, [30/34], loss (tensor([2.2450], device='cuda:0'),tensor([0.0003], device='cuda:0')), PSNR 81.33365155824629, SSIM 0.9999796473323096,
-Train_epoch_8 : G_Loss= 2.43205; D_Loss= 0.00029; SSIM= 0.99998; PSNR= 81.33365
-Not Implement Error.
+epoch 8, [20/34], loss (tensor([1.8027], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR 87.35425147152591, SSIM 0.9999966154454845,
+epoch 8, [30/34], loss (tensor([0.5080], device='cuda:0'),tensor([0.0007], device='cuda:0')), PSNR 81.33365155824629, SSIM 0.9999941596549368,
+Train_epoch_8 : G_Loss= 2.11778; D_Loss= 0.00046; SSIM= 0.99999; PSNR= 81.33365
 Train_epoch_9: learning_rate= 0.001
-epoch 9, [0/34], loss (tensor([1.4294], device='cuda:0'),tensor([0.0004], device='cuda:0')), PSNR inf, SSIM 1.0,
+epoch 9, [0/34], loss (tensor([0.9022], device='cuda:0'),tensor([0.0017], device='cuda:0')), PSNR inf, SSIM 1.0,
 Warning: NaN or Inf found in input tensor.
-epoch 9, [10/34], loss (tensor([2.0103], device='cuda:0'),tensor([0.0005], device='cuda:0')), PSNR inf, SSIM 1.0,
+epoch 9, [10/34], loss (tensor([3.5051], device='cuda:0'),tensor([0.0004], device='cuda:0')), PSNR 92.12546401872254, SSIM 0.9999991205422724,
+epoch 9, [20/34], loss (tensor([1.5624], device='cuda:0'),tensor([0.0016], device='cuda:0')), PSNR inf, SSIM 1.0,
 Warning: NaN or Inf found in input tensor.
-epoch 9, [20/34], loss (tensor([2.1820], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR 81.33365155824629, SSIM 0.9999796473323096,
-epoch 9, [30/34], loss (tensor([4.3444], device='cuda:0'),tensor([0.0001], device='cuda:0')), PSNR 71.63328379202073, SSIM 0.9999258271864182,
-Train_epoch_9 : G_Loss= 2.35120; D_Loss= 0.00022; SSIM= 0.99993; PSNR= 71.63328
-Not Implement Error.
+epoch 9, [30/34], loss (tensor([1.0656], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+Train_epoch_9 : G_Loss= 2.11667; D_Loss= 0.00077; SSIM= 1.00000; PSNR= inf
+Train_epoch_10: learning_rate= 0.001
+epoch 10, [0/34], loss (tensor([0.9991], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 10, [10/34], loss (tensor([1.8455], device='cuda:0'),tensor([0.0003], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 10, [20/34], loss (tensor([3.0693], device='cuda:0'),tensor([0.0006], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 10, [30/34], loss (tensor([1.3075], device='cuda:0'),tensor([0.0003], device='cuda:0')), PSNR 81.51848561518642, SSIM 0.99998660901699,
+Train_epoch_10 : G_Loss= 1.99724; D_Loss= 0.00035; SSIM= 0.99999; PSNR= 81.51849
+Train_epoch_11: learning_rate= 0.001
+epoch 11, [0/34], loss (tensor([1.2839], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR 72.14723321126529, SSIM 0.9998550170985485,
+epoch 11, [10/34], loss (tensor([2.3872], device='cuda:0'),tensor([0.0005], device='cuda:0')), PSNR 79.33792800919426, SSIM 0.9999726222922913,
+epoch 11, [20/34], loss (tensor([2.1800], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 11, [30/34], loss (tensor([1.4777], device='cuda:0'),tensor([0.0005], device='cuda:0')), PSNR 52.091074126820665, SSIM 0.9470344391064425,
+Train_epoch_11 : G_Loss= 1.91757; D_Loss= 0.00038; SSIM= 0.94703; PSNR= 52.09107
+Train_epoch_12: learning_rate= 0.001
+epoch 12, [0/34], loss (tensor([1.2799], device='cuda:0'),tensor([0.0007], device='cuda:0')), PSNR 86.10486410544291, SSIM 0.9999963964476478,
+epoch 12, [10/34], loss (tensor([2.4208], device='cuda:0'),tensor([0.0011], device='cuda:0')), PSNR 83.67448361857997, SSIM 0.9999926245464215,
+epoch 12, [20/34], loss (tensor([2.5500], device='cuda:0'),tensor([0.0006], device='cuda:0')), PSNR 76.10486410544293, SSIM 0.9999797148891261,
+epoch 12, [30/34], loss (tensor([2.1532], device='cuda:0'),tensor([0.0004], device='cuda:0')), PSNR 86.10486410544291, SSIM 0.9999976053623694,
+Train_epoch_12 : G_Loss= 1.86866; D_Loss= 0.00075; SSIM= 1.00000; PSNR= 86.10486
+Train_epoch_13: learning_rate= 0.001
+epoch 13, [0/34], loss (tensor([0.3605], device='cuda:0'),tensor([0.0004], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 13, [10/34], loss (tensor([1.2569], device='cuda:0'),tensor([0.0004], device='cuda:0')), PSNR 64.265051916297, SSIM 0.9975488614620618,
+epoch 13, [20/34], loss (tensor([1.9613], device='cuda:0'),tensor([0.0143], device='cuda:0')), PSNR 57.65698691716446, SSIM 0.9861291316466296,
+epoch 13, [30/34], loss (tensor([2.9826], device='cuda:0'),tensor([0.0021], device='cuda:0')), PSNR 88.14606393200216, SSIM 0.9999992400270503,
+Train_epoch_13 : G_Loss= 2.95933; D_Loss= 0.00393; SSIM= 1.00000; PSNR= 88.14606
+Train_epoch_14: learning_rate= 0.001
+epoch 14, [0/34], loss (tensor([1.8519], device='cuda:0'),tensor([0.0097], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 14, [10/34], loss (tensor([0.4355], device='cuda:0'),tensor([7.8349e-05], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 14, [20/34], loss (tensor([1.6765], device='cuda:0'),tensor([0.0003], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 14, [30/34], loss (tensor([2.8618], device='cuda:0'),tensor([0.0001], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+Train_epoch_14 : G_Loss= 2.38182; D_Loss= 0.00095; SSIM= 1.00000; PSNR= inf
+Train_epoch_15: learning_rate= 0.001
+epoch 15, [0/34], loss (tensor([2.1514], device='cuda:0'),tensor([8.0233e-05], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 15, [10/34], loss (tensor([1.2551], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR 72.65603131174429, SSIM 0.9998588258235451,
+epoch 15, [20/34], loss (tensor([1.4371], device='cuda:0'),tensor([0.0034], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 15, [30/34], loss (tensor([2.6002], device='cuda:0'),tensor([0.0006], device='cuda:0')), PSNR 76.56243901104968, SSIM 0.9999490673391053,
+Train_epoch_15 : G_Loss= 2.28644; D_Loss= 0.00088; SSIM= 0.99995; PSNR= 76.56244
+Train_epoch_16: learning_rate= 0.001
+epoch 16, [0/34], loss (tensor([1.5366], device='cuda:0'),tensor([0.0009], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 16, [10/34], loss (tensor([2.3145], device='cuda:0'),tensor([0.0003], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 16, [20/34], loss (tensor([1.2674], device='cuda:0'),tensor([0.0004], device='cuda:0')), PSNR 81.33365155824629, SSIM 0.9999796473323096,
+epoch 16, [30/34], loss (tensor([1.6217], device='cuda:0'),tensor([0.0008], device='cuda:0')), PSNR 95.13576397536235, SSIM 0.9999995745580431,
+Train_epoch_16 : G_Loss= 2.09439; D_Loss= 0.00051; SSIM= 1.00000; PSNR= 95.13576
+Train_epoch_17: learning_rate= 0.001
+epoch 17, [0/34], loss (tensor([2.0248], device='cuda:0'),tensor([0.0007], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 17, [10/34], loss (tensor([0.3177], device='cuda:0'),tensor([0.0003], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 17, [20/34], loss (tensor([1.2598], device='cuda:0'),tensor([0.0003], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 17, [30/34], loss (tensor([5.0033], device='cuda:0'),tensor([0.0008], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+Train_epoch_17 : G_Loss= 2.02490; D_Loss= 0.00046; SSIM= 1.00000; PSNR= inf
+Train_epoch_18: learning_rate= 0.001
+epoch 18, [0/34], loss (tensor([3.5951], device='cuda:0'),tensor([0.0005], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 18, [10/34], loss (tensor([0.5165], device='cuda:0'),tensor([0.0003], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 18, [20/34], loss (tensor([1.2547], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 18, [30/34], loss (tensor([1.2040], device='cuda:0'),tensor([0.0005], device='cuda:0')), PSNR 51.90510021172332, SSIM 0.9445285706350924,
+Train_epoch_18 : G_Loss= 2.03206; D_Loss= 0.00040; SSIM= 0.94453; PSNR= 51.90510
+Train_epoch_19: learning_rate= 0.001
+epoch 19, [0/34], loss (tensor([4.7755], device='cuda:0'),tensor([0.0008], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 19, [10/34], loss (tensor([3.1468], device='cuda:0'),tensor([0.0004], device='cuda:0')), PSNR 70.98603049565418, SSIM 0.9995282300086078,
+epoch 19, [20/34], loss (tensor([1.8020], device='cuda:0'),tensor([9.2341e-05], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 19, [30/34], loss (tensor([2.5445], device='cuda:0'),tensor([9.4080e-05], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+Train_epoch_19 : G_Loss= 1.91007; D_Loss= 0.00032; SSIM= 1.00000; PSNR= inf
+Train_epoch_20: learning_rate= 0.0005
+epoch 20, [0/34], loss (tensor([1.9341], device='cuda:0'),tensor([0.0004], device='cuda:0')), PSNR 84.7218371237801, SSIM 0.9999946515436999,
+epoch 20, [10/34], loss (tensor([1.7111], device='cuda:0'),tensor([0.0006], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 20, [20/34], loss (tensor([1.2937], device='cuda:0'),tensor([0.0011], device='cuda:0')), PSNR 81.33365155824629, SSIM 0.9999796473323096,
+epoch 20, [30/34], loss (tensor([2.3808], device='cuda:0'),tensor([0.0008], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+Train_epoch_20 : G_Loss= 1.89593; D_Loss= 0.00055; SSIM= 1.00000; PSNR= inf
+Train_epoch_21: learning_rate= 0.0005
+epoch 21, [0/34], loss (tensor([2.0839], device='cuda:0'),tensor([0.0007], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 21, [10/34], loss (tensor([0.5502], device='cuda:0'),tensor([0.0008], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 21, [20/34], loss (tensor([3.3862], device='cuda:0'),tensor([0.0007], device='cuda:0')), PSNR 59.17749620463013, SSIM 0.990985971977779,
+epoch 21, [30/34], loss (tensor([0.4090], device='cuda:0'),tensor([0.0005], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+Train_epoch_21 : G_Loss= 1.76031; D_Loss= 0.00072; SSIM= 1.00000; PSNR= inf
+Train_epoch_22: learning_rate= 0.0005
+epoch 22, [0/34], loss (tensor([2.7513], device='cuda:0'),tensor([0.0006], device='cuda:0')), PSNR 71.05336432224387, SSIM 0.9995321234161817,
+epoch 22, [10/34], loss (tensor([1.0050], device='cuda:0'),tensor([0.0004], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 22, [20/34], loss (tensor([2.0784], device='cuda:0'),tensor([0.0003], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 22, [30/34], loss (tensor([2.1873], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR 76.27085672363754, SSIM 0.9999466082042638,
+Train_epoch_22 : G_Loss= 1.70091; D_Loss= 0.00036; SSIM= 0.99995; PSNR= 76.27086
+Train_epoch_23: learning_rate= 0.0005
+epoch 23, [0/34], loss (tensor([1.0758], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR 87.35425147152591, SSIM 0.9999966154454845,
+epoch 23, [10/34], loss (tensor([1.9357], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR 78.60363883760893, SSIM 0.9999683811761776,
+epoch 23, [20/34], loss (tensor([2.3851], device='cuda:0'),tensor([0.0003], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 23, [30/34], loss (tensor([1.4146], device='cuda:0'),tensor([0.0003], device='cuda:0')), PSNR 85.5933388809691, SSIM 0.999996178488199,
+Train_epoch_23 : G_Loss= 1.72373; D_Loss= 0.00026; SSIM= 1.00000; PSNR= 85.59334
+Train_epoch_24: learning_rate= 0.0005
+epoch 24, [0/34], loss (tensor([2.6775], device='cuda:0'),tensor([0.0003], device='cuda:0')), PSNR 70.07071365131364, SSIM 0.9995052260787846,
+epoch 24, [10/34], loss (tensor([0.4968], device='cuda:0'),tensor([0.0007], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 24, [20/34], loss (tensor([3.2847], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 24, [30/34], loss (tensor([1.0359], device='cuda:0'),tensor([0.0004], device='cuda:0')), PSNR 81.33365155824629, SSIM 0.9999796473323096,
+Train_epoch_24 : G_Loss= 1.65839; D_Loss= 0.00037; SSIM= 0.99998; PSNR= 81.33365
+Train_epoch_25: learning_rate= 0.0005
+epoch 25, [0/34], loss (tensor([1.0664], device='cuda:0'),tensor([0.0003], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 25, [10/34], loss (tensor([2.6636], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR 92.12546401872254, SSIM 0.9999991205422724,
+epoch 25, [20/34], loss (tensor([4.4947], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR 86.10486410544291, SSIM 0.9999964263282392,
+epoch 25, [30/34], loss (tensor([2.2829], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+Train_epoch_25 : G_Loss= 1.65820; D_Loss= 0.00028; SSIM= 1.00000; PSNR= inf
+Train_epoch_26: learning_rate= 0.0005
+epoch 26, [0/34], loss (tensor([2.2839], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 26, [10/34], loss (tensor([0.5061], device='cuda:0'),tensor([0.0005], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 26, [20/34], loss (tensor([2.2216], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 26, [30/34], loss (tensor([0.9003], device='cuda:0'),tensor([0.0003], device='cuda:0')), PSNR 95.13576397536235, SSIM 0.9999998176677327,
+Train_epoch_26 : G_Loss= 1.61853; D_Loss= 0.00028; SSIM= 1.00000; PSNR= 95.13576
+Train_epoch_27: learning_rate= 0.0005
+epoch 27, [0/34], loss (tensor([0.7404], device='cuda:0'),tensor([0.0006], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 27, [10/34], loss (tensor([2.1719], device='cuda:0'),tensor([0.0006], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 27, [20/34], loss (tensor([0.4594], device='cuda:0'),tensor([0.0005], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 27, [30/34], loss (tensor([1.4010], device='cuda:0'),tensor([0.0003], device='cuda:0')), PSNR 77.57701541863744, SSIM 0.9999707609242896,
+Train_epoch_27 : G_Loss= 1.59659; D_Loss= 0.00029; SSIM= 0.99997; PSNR= 77.57702
+Train_epoch_28: learning_rate= 0.0005
+epoch 28, [0/34], loss (tensor([0.8854], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR 89.11516406208273, SSIM 0.9999992969096052,
+epoch 28, [10/34], loss (tensor([0.8811], device='cuda:0'),tensor([0.0003], device='cuda:0')), PSNR 81.33365155824629, SSIM 0.9999796473323096,
+epoch 28, [20/34], loss (tensor([1.8229], device='cuda:0'),tensor([0.0004], device='cuda:0')), PSNR 77.35425147152593, SSIM 0.9999592982981576,
+epoch 28, [30/34], loss (tensor([1.7875], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+Train_epoch_28 : G_Loss= 1.56433; D_Loss= 0.00036; SSIM= 1.00000; PSNR= inf
+Train_epoch_29: learning_rate= 0.0005
+epoch 29, [0/34], loss (tensor([2.7337], device='cuda:0'),tensor([0.0003], device='cuda:0')), PSNR 92.12546401872254, SSIM 0.9999990491077376,
+epoch 29, [10/34], loss (tensor([0.9377], device='cuda:0'),tensor([0.0005], device='cuda:0')), PSNR 81.33365155824629, SSIM 0.9999796473323096,
+epoch 29, [20/34], loss (tensor([3.1898], device='cuda:0'),tensor([0.0007], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 29, [30/34], loss (tensor([1.2046], device='cuda:0'),tensor([0.0003], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+Train_epoch_29 : G_Loss= 1.58857; D_Loss= 0.00037; SSIM= 1.00000; PSNR= inf
+Train_epoch_30: learning_rate= 0.0005
+epoch 30, [0/34], loss (tensor([1.1783], device='cuda:0'),tensor([0.0006], device='cuda:0')), PSNR 78.23380317507723, SSIM 0.9999842837208536,
+epoch 30, [10/34], loss (tensor([2.2227], device='cuda:0'),tensor([0.0003], device='cuda:0')), PSNR 82.34822796583407, SSIM 0.999987480368713,
+epoch 30, [20/34], loss (tensor([2.1924], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR 92.12546401872254, SSIM 0.9999991205422724,
+epoch 30, [30/34], loss (tensor([4.4234], device='cuda:0'),tensor([0.0003], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+Train_epoch_30 : G_Loss= 1.62530; D_Loss= 0.00032; SSIM= 1.00000; PSNR= inf
+Train_epoch_31: learning_rate= 0.0005
+epoch 31, [0/34], loss (tensor([1.8401], device='cuda:0'),tensor([0.0007], device='cuda:0')), PSNR 70.63327289216875, SSIM 0.9995335828160018,
+epoch 31, [10/34], loss (tensor([1.9228], device='cuda:0'),tensor([0.0005], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 31, [20/34], loss (tensor([1.9498], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 31, [30/34], loss (tensor([1.7272], device='cuda:0'),tensor([0.0003], device='cuda:0')), PSNR 95.13576397536235, SSIM 0.9999995745580431,
+Train_epoch_31 : G_Loss= 1.58199; D_Loss= 0.00050; SSIM= 1.00000; PSNR= 95.13576
+Train_epoch_32: learning_rate= 0.0005
+epoch 32, [0/34], loss (tensor([1.9091], device='cuda:0'),tensor([0.0001], device='cuda:0')), PSNR 79.57273896768949, SSIM 0.9999777321385542,
+epoch 32, [10/34], loss (tensor([1.1591], device='cuda:0'),tensor([0.0003], device='cuda:0')), PSNR 64.265051916297, SSIM 0.9976249345087145,
+epoch 32, [20/34], loss (tensor([0.9890], device='cuda:0'),tensor([0.0003], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 32, [30/34], loss (tensor([0.4979], device='cuda:0'),tensor([0.0007], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+Train_epoch_32 : G_Loss= 1.54028; D_Loss= 0.00029; SSIM= 1.00000; PSNR= inf
+Train_epoch_33: learning_rate= 0.0005
+epoch 33, [0/34], loss (tensor([0.9486], device='cuda:0'),tensor([0.0005], device='cuda:0')), PSNR 86.10486410544291, SSIM 0.9999956788401291,
+epoch 33, [10/34], loss (tensor([0.9242], device='cuda:0'),tensor([0.0003], device='cuda:0')), PSNR 81.33365155824629, SSIM 0.9999796473323096,
+epoch 33, [20/34], loss (tensor([1.8262], device='cuda:0'),tensor([0.0003], device='cuda:0')), PSNR 76.62318048817161, SSIM 0.9999511584276018,
+epoch 33, [30/34], loss (tensor([2.0358], device='cuda:0'),tensor([0.0001], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+Train_epoch_33 : G_Loss= 1.50550; D_Loss= 0.00031; SSIM= 1.00000; PSNR= inf
+Train_epoch_34: learning_rate= 0.0005
+epoch 34, [0/34], loss (tensor([0.4364], device='cuda:0'),tensor([0.0003], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 34, [10/34], loss (tensor([0.8516], device='cuda:0'),tensor([0.0006], device='cuda:0')), PSNR 82.8312747615796, SSIM 0.999995337140636,
+epoch 34, [20/34], loss (tensor([3.0083], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR 86.68478357521978, SSIM 0.9999987047660798,
+epoch 34, [30/34], loss (tensor([1.0024], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR 78.80107941956649, SSIM 0.999992790059366,
+Train_epoch_34 : G_Loss= 1.52901; D_Loss= 0.00043; SSIM= 0.99999; PSNR= 78.80108
+Train_epoch_35: learning_rate= 0.0005
+epoch 35, [0/34], loss (tensor([1.0519], device='cuda:0'),tensor([0.0004], device='cuda:0')), PSNR 64.30432254393183, SSIM 0.9975725317519817,
+epoch 35, [10/34], loss (tensor([2.2782], device='cuda:0'),tensor([0.0003], device='cuda:0')), PSNR 92.12546401872254, SSIM 0.9999991205422724,
+epoch 35, [20/34], loss (tensor([0.6829], device='cuda:0'),tensor([0.0004], device='cuda:0')), PSNR 68.99734575660167, SSIM 0.9998391219269105,
+epoch 35, [30/34], loss (tensor([0.7977], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR 86.68478357521978, SSIM 0.9999983629007214,
+Train_epoch_35 : G_Loss= 1.52035; D_Loss= 0.00042; SSIM= 1.00000; PSNR= 86.68478
+Train_epoch_36: learning_rate= 0.0005
+epoch 36, [0/34], loss (tensor([1.6572], device='cuda:0'),tensor([0.0005], device='cuda:0')), PSNR 89.11516406208273, SSIM 0.999998214891882,
+epoch 36, [10/34], loss (tensor([1.0818], device='cuda:0'),tensor([0.0003], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 36, [20/34], loss (tensor([1.5519], device='cuda:0'),tensor([0.0004], device='cuda:0')), PSNR 70.79007493502037, SSIM 0.9997815220075741,
+epoch 36, [30/34], loss (tensor([0.8267], device='cuda:0'),tensor([5.8491e-05], device='cuda:0')), PSNR 51.90510021172332, SSIM 0.9445285706350924,
+Train_epoch_36 : G_Loss= 1.56013; D_Loss= 0.00029; SSIM= 0.94453; PSNR= 51.90510
+Train_epoch_37: learning_rate= 0.0005
+epoch 37, [0/34], loss (tensor([1.8843], device='cuda:0'),tensor([0.0005], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 37, [10/34], loss (tensor([1.5393], device='cuda:0'),tensor([0.0005], device='cuda:0')), PSNR 76.87501594835409, SSIM 0.9999646997666239,
+epoch 37, [20/34], loss (tensor([1.0232], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 37, [30/34], loss (tensor([2.3565], device='cuda:0'),tensor([0.0004], device='cuda:0')), PSNR 76.56243901104968, SSIM 0.9999578158397222,
+Train_epoch_37 : G_Loss= 1.49959; D_Loss= 0.00040; SSIM= 0.99996; PSNR= 76.56244
+Train_epoch_38: learning_rate= 0.0005
+epoch 38, [0/34], loss (tensor([1.1449], device='cuda:0'),tensor([0.0005], device='cuda:0')), PSNR 83.37485138480554, SSIM 0.999989809286786,
+epoch 38, [10/34], loss (tensor([1.9100], device='cuda:0'),tensor([0.0003], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 38, [20/34], loss (tensor([2.1960], device='cuda:0'),tensor([0.0004], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 38, [30/34], loss (tensor([1.2081], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR 63.884205679557056, SSIM 0.9976806805172319,
+Train_epoch_38 : G_Loss= 1.50654; D_Loss= 0.00030; SSIM= 0.99768; PSNR= 63.88421
+Train_epoch_39: learning_rate= 0.0005
+epoch 39, [0/34], loss (tensor([0.3634], device='cuda:0'),tensor([0.0001], device='cuda:0')), PSNR 77.65388370530036, SSIM 0.999983958533964,
+epoch 39, [10/34], loss (tensor([0.4676], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR 67.32539458915105, SSIM 0.9997655858303098,
+epoch 39, [20/34], loss (tensor([0.9676], device='cuda:0'),tensor([0.0003], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 39, [30/34], loss (tensor([1.7783], device='cuda:0'),tensor([0.0004], device='cuda:0')), PSNR 76.6847835752198, SSIM 0.9999518904611606,
+Train_epoch_39 : G_Loss= 1.50415; D_Loss= 0.00025; SSIM= 0.99995; PSNR= 76.68478
+Train_epoch_40: learning_rate= 0.00025
+epoch 40, [0/34], loss (tensor([0.9979], device='cuda:0'),tensor([0.0003], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 40, [10/34], loss (tensor([0.5117], device='cuda:0'),tensor([0.0008], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 40, [20/34], loss (tensor([2.0708], device='cuda:0'),tensor([0.0003], device='cuda:0')), PSNR 83.99633045229399, SSIM 0.9999959201368935,
+epoch 40, [30/34], loss (tensor([1.6788], device='cuda:0'),tensor([0.0003], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+Train_epoch_40 : G_Loss= 1.46035; D_Loss= 0.00027; SSIM= 1.00000; PSNR= inf
+Train_epoch_41: learning_rate= 0.00025
+epoch 41, [0/34], loss (tensor([0.6749], device='cuda:0'),tensor([0.0001], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 41, [10/34], loss (tensor([1.6782], device='cuda:0'),tensor([0.0003], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 41, [20/34], loss (tensor([3.8963], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR 87.35425147152591, SSIM 0.9999975646944044,
+epoch 41, [30/34], loss (tensor([1.3980], device='cuda:0'),tensor([0.0004], device='cuda:0')), PSNR 78.60363883760893, SSIM 0.9999829964362555,
+Train_epoch_41 : G_Loss= 1.38628; D_Loss= 0.00023; SSIM= 0.99998; PSNR= 78.60364
+Train_epoch_42: learning_rate= 0.00025
+epoch 42, [0/34], loss (tensor([1.0136], device='cuda:0'),tensor([0.0001], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 42, [10/34], loss (tensor([1.3076], device='cuda:0'),tensor([0.0003], device='cuda:0')), PSNR 77.42724385894091, SSIM 0.9999766409521947,
+epoch 42, [20/34], loss (tensor([1.8506], device='cuda:0'),tensor([0.0001], device='cuda:0')), PSNR 70.85441603507446, SSIM 0.9995343196089016,
+epoch 42, [30/34], loss (tensor([0.8675], device='cuda:0'),tensor([0.0004], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+Train_epoch_42 : G_Loss= 1.37193; D_Loss= 0.00025; SSIM= 1.00000; PSNR= inf
+Train_epoch_43: learning_rate= 0.00025
+epoch 43, [0/34], loss (tensor([1.7360], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR 72.4406345331832, SSIM 0.9998685083152383,
+epoch 43, [10/34], loss (tensor([1.8678], device='cuda:0'),tensor([0.0001], device='cuda:0')), PSNR 95.13576397536235, SSIM 0.9999999826350222,
+epoch 43, [20/34], loss (tensor([0.6223], device='cuda:0'),tensor([0.0010], device='cuda:0')), PSNR 52.00004429096418, SSIM 0.9451131738033611,
+epoch 43, [30/34], loss (tensor([1.5034], device='cuda:0'),tensor([0.0003], device='cuda:0')), PSNR 81.33365155824629, SSIM 0.9999846846875092,
+Train_epoch_43 : G_Loss= 1.35417; D_Loss= 0.00043; SSIM= 0.99998; PSNR= 81.33365
+Train_epoch_44: learning_rate= 0.00025
+epoch 44, [0/34], loss (tensor([0.8937], device='cuda:0'),tensor([0.0005], device='cuda:0')), PSNR 81.33365155824629, SSIM 0.9999796473323096,
+epoch 44, [10/34], loss (tensor([0.9321], device='cuda:0'),tensor([0.0003], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 44, [20/34], loss (tensor([1.3778], device='cuda:0'),tensor([0.0004], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 44, [30/34], loss (tensor([0.9260], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR 95.13576397536235, SSIM 0.9999995745580431,
+Train_epoch_44 : G_Loss= 1.33651; D_Loss= 0.00029; SSIM= 1.00000; PSNR= 95.13576
+Train_epoch_45: learning_rate= 0.00025
+epoch 45, [0/34], loss (tensor([1.5707], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR 74.49118408309317, SSIM 0.9999210463204483,
+epoch 45, [10/34], loss (tensor([1.6292], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR 70.60258057489199, SSIM 0.9995333676627687,
+epoch 45, [20/34], loss (tensor([1.1372], device='cuda:0'),tensor([0.0003], device='cuda:0')), PSNR 64.22613320940505, SSIM 0.9976464808556161,
+epoch 45, [30/34], loss (tensor([1.8402], device='cuda:0'),tensor([9.9585e-05], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+Train_epoch_45 : G_Loss= 1.33586; D_Loss= 0.00028; SSIM= 1.00000; PSNR= inf
+Train_epoch_46: learning_rate= 0.00025
+epoch 46, [0/34], loss (tensor([1.5895], device='cuda:0'),tensor([0.0001], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 46, [10/34], loss (tensor([0.7586], device='cuda:0'),tensor([0.0005], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 46, [20/34], loss (tensor([1.9759], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR 90.36455142816573, SSIM 0.9999988320455148,
+epoch 46, [30/34], loss (tensor([1.9950], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR 86.10486410544291, SSIM 0.9999969997508723,
+Train_epoch_46 : G_Loss= 1.35652; D_Loss= 0.00029; SSIM= 1.00000; PSNR= 86.10486
+Train_epoch_47: learning_rate= 0.00025
+epoch 47, [0/34], loss (tensor([0.9317], device='cuda:0'),tensor([0.0001], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 47, [10/34], loss (tensor([0.8708], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR 66.86207124482411, SSIM 0.9991272636251013,
+epoch 47, [20/34], loss (tensor([1.6256], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR 78.32335160160649, SSIM 0.9999893839665603,
+epoch 47, [30/34], loss (tensor([1.3994], device='cuda:0'),tensor([0.0003], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+Train_epoch_47 : G_Loss= 1.31054; D_Loss= 0.00030; SSIM= 1.00000; PSNR= inf
+Train_epoch_48: learning_rate= 0.00025
+epoch 48, [0/34], loss (tensor([0.8831], device='cuda:0'),tensor([0.0001], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 48, [10/34], loss (tensor([0.8562], device='cuda:0'),tensor([0.0003], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 48, [20/34], loss (tensor([0.8674], device='cuda:0'),tensor([0.0003], device='cuda:0')), PSNR 66.7788582604381, SSIM 0.999121620498111,
+epoch 48, [30/34], loss (tensor([0.8717], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR 70.00358797468297, SSIM 0.9998894878194128,
+Train_epoch_48 : G_Loss= 1.31172; D_Loss= 0.00029; SSIM= 0.99989; PSNR= 70.00359
+Train_epoch_49: learning_rate= 0.00025
+epoch 49, [0/34], loss (tensor([0.7111], device='cuda:0'),tensor([0.0001], device='cuda:0')), PSNR 79.007925408165, SSIM 0.9999808350922795,
+epoch 49, [10/34], loss (tensor([1.8523], device='cuda:0'),tensor([8.3626e-05], device='cuda:0')), PSNR 81.33365155824629, SSIM 0.9999833003284107,
+epoch 49, [20/34], loss (tensor([0.7337], device='cuda:0'),tensor([0.0004], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 49, [30/34], loss (tensor([1.1068], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR 64.22965689707829, SSIM 0.9976469120567713,
+Train_epoch_49 : G_Loss= 1.30843; D_Loss= 0.00021; SSIM= 0.99765; PSNR= 64.22966
+Train_epoch_50: learning_rate= 0.00025
+epoch 50, [0/34], loss (tensor([2.5707], device='cuda:0'),tensor([0.0001], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 50, [10/34], loss (tensor([1.5372], device='cuda:0'),tensor([0.0005], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 50, [20/34], loss (tensor([1.6692], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 50, [30/34], loss (tensor([1.1121], device='cuda:0'),tensor([0.0004], device='cuda:0')), PSNR 64.10799782652795, SSIM 0.9976300511771348,
+Train_epoch_50 : G_Loss= 1.31045; D_Loss= 0.00031; SSIM= 0.99763; PSNR= 64.10800
+Train_epoch_51: learning_rate= 0.00025
+epoch 51, [0/34], loss (tensor([1.6814], device='cuda:0'),tensor([0.0003], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 51, [10/34], loss (tensor([1.0328], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR 64.1840704610448, SSIM 0.9976412674107122,
+epoch 51, [20/34], loss (tensor([0.5507], device='cuda:0'),tensor([0.0008], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 51, [30/34], loss (tensor([0.8002], device='cuda:0'),tensor([0.0006], device='cuda:0')), PSNR 81.51848561518642, SSIM 0.9999899035983325,
+Train_epoch_51 : G_Loss= 1.28356; D_Loss= 0.00050; SSIM= 0.99999; PSNR= 81.51849
+Train_epoch_52: learning_rate= 0.00025
+epoch 52, [0/34], loss (tensor([1.4492], device='cuda:0'),tensor([0.0003], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 52, [10/34], loss (tensor([0.7321], device='cuda:0'),tensor([0.0003], device='cuda:0')), PSNR 92.12546401872254, SSIM 0.9999995745580431,
+epoch 52, [20/34], loss (tensor([0.3797], device='cuda:0'),tensor([0.0003], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 52, [30/34], loss (tensor([1.7208], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+Train_epoch_52 : G_Loss= 1.28232; D_Loss= 0.00030; SSIM= 1.00000; PSNR= inf
+Train_epoch_53: learning_rate= 0.00025
+epoch 53, [0/34], loss (tensor([2.1704], device='cuda:0'),tensor([0.0005], device='cuda:0')), PSNR 59.25977667814991, SSIM 0.991087058826945,
+epoch 53, [10/34], loss (tensor([0.8441], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 53, [20/34], loss (tensor([0.4146], device='cuda:0'),tensor([0.0004], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 53, [30/34], loss (tensor([1.4698], device='cuda:0'),tensor([0.0006], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+Train_epoch_53 : G_Loss= 1.26137; D_Loss= 0.00027; SSIM= 1.00000; PSNR= inf
+Train_epoch_54: learning_rate= 0.00025
+epoch 54, [0/34], loss (tensor([1.5257], device='cuda:0'),tensor([9.4345e-05], device='cuda:0')), PSNR 70.72667315471018, SSIM 0.9995345884163772,
+epoch 54, [10/34], loss (tensor([3.5139], device='cuda:0'),tensor([0.0001], device='cuda:0')), PSNR 86.10486410544291, SSIM 0.9999968876635739,
+epoch 54, [20/34], loss (tensor([0.7117], device='cuda:0'),tensor([0.0003], device='cuda:0')), PSNR 92.12546401872254, SSIM 0.9999995745580431,
+epoch 54, [30/34], loss (tensor([1.7948], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR 90.36455142816573, SSIM 0.9999989883303152,
+Train_epoch_54 : G_Loss= 1.25136; D_Loss= 0.00026; SSIM= 1.00000; PSNR= 90.36455
+Train_epoch_55: learning_rate= 0.00025
+epoch 55, [0/34], loss (tensor([0.3987], device='cuda:0'),tensor([0.0003], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 55, [10/34], loss (tensor([0.7195], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 55, [20/34], loss (tensor([0.8209], device='cuda:0'),tensor([0.0003], device='cuda:0')), PSNR 75.13576397536235, SSIM 0.9999864891622532,
+epoch 55, [30/34], loss (tensor([1.7690], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR 84.3439515148861, SSIM 0.9999917812177894,
+Train_epoch_55 : G_Loss= 1.24873; D_Loss= 0.00027; SSIM= 0.99999; PSNR= 84.34395
+Train_epoch_56: learning_rate= 0.00025
+epoch 56, [0/34], loss (tensor([2.3893], device='cuda:0'),tensor([0.0003], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 56, [10/34], loss (tensor([0.7387], device='cuda:0'),tensor([0.0007], device='cuda:0')), PSNR 85.5933388809691, SSIM 0.9999963300667181,
+epoch 56, [20/34], loss (tensor([1.7539], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR 85.13576397536235, SSIM 0.9999970151412266,
+epoch 56, [30/34], loss (tensor([0.8743], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR 81.33365155824629, SSIM 0.9999796473323096,
+Train_epoch_56 : G_Loss= 1.25522; D_Loss= 0.00036; SSIM= 0.99998; PSNR= 81.33365
+Train_epoch_57: learning_rate= 0.00025
+epoch 57, [0/34], loss (tensor([1.7823], device='cuda:0'),tensor([9.9073e-05], device='cuda:0')), PSNR 71.22641290432857, SSIM 0.9995375562619006,
+epoch 57, [10/34], loss (tensor([1.3407], device='cuda:0'),tensor([8.4058e-05], device='cuda:0')), PSNR 95.13576397536235, SSIM 0.9999999218575997,
+epoch 57, [20/34], loss (tensor([1.4716], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 57, [30/34], loss (tensor([1.4905], device='cuda:0'),tensor([0.0003], device='cuda:0')), PSNR 73.37485138480555, SSIM 0.9998863833094812,
+Train_epoch_57 : G_Loss= 1.23888; D_Loss= 0.00021; SSIM= 0.99989; PSNR= 73.37485
+Train_epoch_58: learning_rate= 0.00025
+epoch 58, [0/34], loss (tensor([0.3706], device='cuda:0'),tensor([0.0005], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 58, [10/34], loss (tensor([1.2035], device='cuda:0'),tensor([0.0004], device='cuda:0')), PSNR 78.41478539600519, SSIM 0.9999840548595013,
+epoch 58, [20/34], loss (tensor([0.9195], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 58, [30/34], loss (tensor([0.9453], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+Train_epoch_58 : G_Loss= 1.23950; D_Loss= 0.00022; SSIM= 1.00000; PSNR= inf
+Train_epoch_59: learning_rate= 0.00025
+epoch 59, [0/34], loss (tensor([1.4623], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR 74.02986687236987, SSIM 0.9999073052447892,
+epoch 59, [10/34], loss (tensor([1.3399], device='cuda:0'),tensor([0.0004], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 59, [20/34], loss (tensor([1.7913], device='cuda:0'),tensor([0.0004], device='cuda:0')), PSNR 76.8106748483, SSIM 0.9999496225832744,
+epoch 59, [30/34], loss (tensor([0.8644], device='cuda:0'),tensor([0.0003], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+Train_epoch_59 : G_Loss= 1.23157; D_Loss= 0.00030; SSIM= 1.00000; PSNR= inf
+Train_epoch_60: learning_rate= 0.000125
+epoch 60, [0/34], loss (tensor([0.8269], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 60, [10/34], loss (tensor([0.9728], device='cuda:0'),tensor([0.0003], device='cuda:0')), PSNR 64.265051916297, SSIM 0.9976509016907069,
+epoch 60, [20/34], loss (tensor([0.3788], device='cuda:0'),tensor([0.0003], device='cuda:0')), PSNR 95.13576397536235, SSIM 0.9999998176677327,
+epoch 60, [30/34], loss (tensor([0.9253], device='cuda:0'),tensor([0.0001], device='cuda:0')), PSNR 92.12546401872254, SSIM 0.9999991491160861,
+Train_epoch_60 : G_Loss= 1.19867; D_Loss= 0.00022; SSIM= 1.00000; PSNR= 92.12546
+Train_epoch_61: learning_rate= 0.000125
+epoch 61, [0/34], loss (tensor([0.6292], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR 71.57550540343112, SSIM 0.9999426638022959,
+epoch 61, [10/34], loss (tensor([1.5586], device='cuda:0'),tensor([0.0001], device='cuda:0')), PSNR 85.13576397536235, SSIM 0.9999975629792335,
+epoch 61, [20/34], loss (tensor([0.6602], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR 82.58303892432929, SSIM 0.9999939214012552,
+epoch 61, [30/34], loss (tensor([3.3954], device='cuda:0'),tensor([0.0001], device='cuda:0')), PSNR 85.5933388809691, SSIM 0.9999967053313067,
+Train_epoch_61 : G_Loss= 1.17907; D_Loss= 0.00021; SSIM= 1.00000; PSNR= 85.59334
+Train_epoch_62: learning_rate= 0.000125
+epoch 62, [0/34], loss (tensor([1.6726], device='cuda:0'),tensor([0.0001], device='cuda:0')), PSNR 71.10455876360417, SSIM 0.9995372876716068,
+epoch 62, [10/34], loss (tensor([2.2937], device='cuda:0'),tensor([0.0001], device='cuda:0')), PSNR 95.13576397536235, SSIM 0.9999998176677327,
+epoch 62, [20/34], loss (tensor([1.3189], device='cuda:0'),tensor([0.0003], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 62, [30/34], loss (tensor([1.4914], device='cuda:0'),tensor([9.8035e-05], device='cuda:0')), PSNR 70.71096628471787, SSIM 0.9995335613852666,
+Train_epoch_62 : G_Loss= 1.17410; D_Loss= 0.00019; SSIM= 0.99953; PSNR= 70.71097
+Train_epoch_63: learning_rate= 0.000125
+epoch 63, [0/34], loss (tensor([0.6748], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR 95.13576397536235, SSIM 0.9999997568903103,
+epoch 63, [10/34], loss (tensor([1.2933], device='cuda:0'),tensor([0.0003], device='cuda:0')), PSNR 78.23380317507723, SSIM 0.9999632713466372,
+epoch 63, [20/34], loss (tensor([0.6939], device='cuda:0'),tensor([0.0003], device='cuda:0')), PSNR 84.7218371237801, SSIM 0.9999953770117288,
+epoch 63, [30/34], loss (tensor([1.6521], device='cuda:0'),tensor([0.0001], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+Train_epoch_63 : G_Loss= 1.17347; D_Loss= 0.00021; SSIM= 1.00000; PSNR= inf
+Train_epoch_64: learning_rate= 0.000125
+epoch 64, [0/34], loss (tensor([1.3200], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR 74.7218371237801, SSIM 0.9999219344708794,
+epoch 64, [10/34], loss (tensor([2.2269], device='cuda:0'),tensor([0.0003], device='cuda:0')), PSNR 90.36455142816573, SSIM 0.9999991670327879,
+epoch 64, [20/34], loss (tensor([0.5186], device='cuda:0'),tensor([8.8730e-05], device='cuda:0')), PSNR 52.033080309037885, SSIM 0.9454506081626071,
+epoch 64, [30/34], loss (tensor([1.2666], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR 80.8221263337725, SSIM 0.9999822010546074,
+Train_epoch_64 : G_Loss= 1.16986; D_Loss= 0.00024; SSIM= 0.99998; PSNR= 80.82213
+Train_epoch_65: learning_rate= 0.000125
+epoch 65, [0/34], loss (tensor([3.2303], device='cuda:0'),tensor([0.0001], device='cuda:0')), PSNR 86.68478357521978, SSIM 0.9999969184733429,
+epoch 65, [10/34], loss (tensor([0.9258], device='cuda:0'),tensor([0.0001], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 65, [20/34], loss (tensor([0.4503], device='cuda:0'),tensor([0.0003], device='cuda:0')), PSNR 66.59270355735156, SSIM 0.9997913880279725,
+epoch 65, [30/34], loss (tensor([1.5175], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR 70.63327289216875, SSIM 0.999533047460604,
+Train_epoch_65 : G_Loss= 1.16677; D_Loss= 0.00021; SSIM= 0.99953; PSNR= 70.63327
+Train_epoch_66: learning_rate= 0.000125
+epoch 66, [0/34], loss (tensor([0.3604], device='cuda:0'),tensor([0.0005], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 66, [10/34], loss (tensor([0.6657], device='cuda:0'),tensor([0.0003], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 66, [20/34], loss (tensor([1.2063], device='cuda:0'),tensor([0.0001], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 66, [30/34], loss (tensor([0.4948], device='cuda:0'),tensor([0.0007], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+Train_epoch_66 : G_Loss= 1.16206; D_Loss= 0.00020; SSIM= 1.00000; PSNR= inf
+Train_epoch_67: learning_rate= 0.000125
+epoch 67, [0/34], loss (tensor([0.7674], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 67, [10/34], loss (tensor([0.9364], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 67, [20/34], loss (tensor([0.4976], device='cuda:0'),tensor([5.2563e-05], device='cuda:0')), PSNR 52.00152130367044, SSIM 0.9451146787056157,
+epoch 67, [30/34], loss (tensor([0.6527], device='cuda:0'),tensor([0.0004], device='cuda:0')), PSNR 79.33792800919426, SSIM 0.9999802470783768,
+Train_epoch_67 : G_Loss= 1.16153; D_Loss= 0.00022; SSIM= 0.99998; PSNR= 79.33793
+Train_epoch_68: learning_rate= 0.000125
+epoch 68, [0/34], loss (tensor([0.5111], device='cuda:0'),tensor([0.0001], device='cuda:0')), PSNR 70.30702813927482, SSIM 0.9998962502305133,
+epoch 68, [10/34], loss (tensor([1.2294], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR 95.13576397536235, SSIM 0.9999999218575997,
+epoch 68, [20/34], loss (tensor([1.2968], device='cuda:0'),tensor([0.0001], device='cuda:0')), PSNR 92.12546401872254, SSIM 0.9999998641582483,
+epoch 68, [30/34], loss (tensor([1.1890], device='cuda:0'),tensor([0.0003], device='cuda:0')), PSNR 83.0945641488031, SSIM 0.9999957380887857,
+Train_epoch_68 : G_Loss= 1.15374; D_Loss= 0.00022; SSIM= 1.00000; PSNR= 83.09456
+Train_epoch_69: learning_rate= 0.000125
+epoch 69, [0/34], loss (tensor([1.7014], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR 72.5830389243293, SSIM 0.9999179345426004,
+epoch 69, [10/34], loss (tensor([1.5648], device='cuda:0'),tensor([0.0001], device='cuda:0')), PSNR 71.08742680916298, SSIM 0.9995370445619172,
+epoch 69, [20/34], loss (tensor([0.6377], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR 87.35425147152591, SSIM 0.9999980344304267,
+epoch 69, [30/34], loss (tensor([0.4697], device='cuda:0'),tensor([0.0008], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+Train_epoch_69 : G_Loss= 1.14183; D_Loss= 0.00021; SSIM= 1.00000; PSNR= inf
+Train_epoch_70: learning_rate= 0.000125
+epoch 70, [0/34], loss (tensor([1.2284], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR 78.70123721050048, SSIM 0.9999675826488633,
+epoch 70, [10/34], loss (tensor([0.7010], device='cuda:0'),tensor([0.0004], device='cuda:0')), PSNR 84.7218371237801, SSIM 0.9999954077482698,
+epoch 70, [20/34], loss (tensor([2.1320], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR 59.30717935311737, SSIM 0.9912364847130021,
+epoch 70, [30/34], loss (tensor([0.6423], device='cuda:0'),tensor([0.0003], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+Train_epoch_70 : G_Loss= 1.13817; D_Loss= 0.00020; SSIM= 1.00000; PSNR= inf
+Train_epoch_71: learning_rate= 0.000125
+epoch 71, [0/34], loss (tensor([1.5523], device='cuda:0'),tensor([0.0001], device='cuda:0')), PSNR 70.33569454579086, SSIM 0.9995188718838005,
+epoch 71, [10/34], loss (tensor([0.7332], device='cuda:0'),tensor([0.0003], device='cuda:0')), PSNR 81.33365155824629, SSIM 0.9999796473323096,
+epoch 71, [20/34], loss (tensor([0.7964], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR 66.85561333312259, SSIM 0.9991266016216503,
+epoch 71, [30/34], loss (tensor([0.5028], device='cuda:0'),tensor([7.3038e-05], device='cuda:0')), PSNR 70.5117839963728, SSIM 0.9999037714162559,
+Train_epoch_71 : G_Loss= 1.14063; D_Loss= 0.00020; SSIM= 0.99990; PSNR= 70.51178
+Train_epoch_72: learning_rate= 0.000125
+epoch 72, [0/34], loss (tensor([3.1602], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR 81.33365155824629, SSIM 0.999987666592677,
+epoch 72, [10/34], loss (tensor([1.2716], device='cuda:0'),tensor([0.0001], device='cuda:0')), PSNR 74.23671286096838, SSIM 0.9999086336776616,
+epoch 72, [20/34], loss (tensor([0.8914], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR 89.11516406208273, SSIM 0.9999982648960563,
+epoch 72, [30/34], loss (tensor([0.8029], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR 66.7535717562861, SSIM 0.9991198819674674,
+Train_epoch_72 : G_Loss= 1.12771; D_Loss= 0.00021; SSIM= 0.99912; PSNR= 66.75357
+Train_epoch_73: learning_rate= 0.000125
+epoch 73, [0/34], loss (tensor([1.1544], device='cuda:0'),tensor([0.0003], device='cuda:0')), PSNR 84.3439515148861, SSIM 0.999996423381236,
+epoch 73, [10/34], loss (tensor([0.6628], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR 95.13576397536235, SSIM 0.9999997568903103,
+epoch 73, [20/34], loss (tensor([2.0579], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR 59.27439372305443, SSIM 0.9911629103235943,
+epoch 73, [30/34], loss (tensor([0.5144], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR 70.09785714479054, SSIM 0.9999652643539252,
+Train_epoch_73 : G_Loss= 1.13215; D_Loss= 0.00022; SSIM= 0.99997; PSNR= 70.09786
+Train_epoch_74: learning_rate= 0.000125
+epoch 74, [0/34], loss (tensor([1.4786], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR 86.68478357521978, SSIM 0.9999985746489181,
+epoch 74, [10/34], loss (tensor([0.7322], device='cuda:0'),tensor([0.0004], device='cuda:0')), PSNR 81.33365155824629, SSIM 0.9999796473323096,
+epoch 74, [20/34], loss (tensor([1.2440], device='cuda:0'),tensor([0.0001], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 74, [30/34], loss (tensor([1.5264], device='cuda:0'),tensor([0.0001], device='cuda:0')), PSNR 70.8060710666183, SSIM 0.9995334306853748,
+Train_epoch_74 : G_Loss= 1.13243; D_Loss= 0.00019; SSIM= 0.99953; PSNR= 70.80607
+Train_epoch_75: learning_rate= 0.000125
+epoch 75, [0/34], loss (tensor([0.5074], device='cuda:0'),tensor([7.8616e-05], device='cuda:0')), PSNR 71.89293942238544, SSIM 0.9999404061081759,
+epoch 75, [10/34], loss (tensor([0.7702], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR 66.47289058452041, SSIM 0.9990973324401021,
+epoch 75, [20/34], loss (tensor([0.5883], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR 69.23626796210529, SSIM 0.999863704834309,
+epoch 75, [30/34], loss (tensor([0.9610], device='cuda:0'),tensor([0.0001], device='cuda:0')), PSNR 81.91357102802316, SSIM 0.9999971194614701,
+Train_epoch_75 : G_Loss= 1.13196; D_Loss= 0.00020; SSIM= 1.00000; PSNR= 81.91357
+Train_epoch_76: learning_rate= 0.000125
+epoch 76, [0/34], loss (tensor([0.6851], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 76, [10/34], loss (tensor([1.3842], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR 78.70123721050048, SSIM 0.9999736389895831,
+epoch 76, [20/34], loss (tensor([0.4593], device='cuda:0'),tensor([0.0006], device='cuda:0')), PSNR 69.02916234446356, SSIM 0.9999324953264793,
+epoch 76, [30/34], loss (tensor([1.5000], device='cuda:0'),tensor([0.0001], device='cuda:0')), PSNR 85.5933388809691, SSIM 0.9999984269264344,
+Train_epoch_76 : G_Loss= 1.11966; D_Loss= 0.00029; SSIM= 1.00000; PSNR= 85.59334
+Train_epoch_77: learning_rate= 0.000125
+epoch 77, [0/34], loss (tensor([0.7038], device='cuda:0'),tensor([0.0003], device='cuda:0')), PSNR 81.33365155824629, SSIM 0.9999796473323096,
+epoch 77, [10/34], loss (tensor([0.6411], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 77, [20/34], loss (tensor([1.3211], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR 73.99633045229399, SSIM 0.9999060584202827,
+epoch 77, [30/34], loss (tensor([1.6045], device='cuda:0'),tensor([0.0001], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+Train_epoch_77 : G_Loss= 1.11806; D_Loss= 0.00024; SSIM= 1.00000; PSNR= inf
+Train_epoch_78: learning_rate= 0.000125
+epoch 78, [0/34], loss (tensor([2.1679], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR 90.36455142816573, SSIM 0.999998966783819,
+epoch 78, [10/34], loss (tensor([0.4737], device='cuda:0'),tensor([6.5816e-05], device='cuda:0')), PSNR 51.970189975584674, SSIM 0.9449440305677469,
+epoch 78, [20/34], loss (tensor([0.6908], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR 95.13576397536235, SSIM 0.9999997568903103,
+epoch 78, [30/34], loss (tensor([0.8010], device='cuda:0'),tensor([0.0001], device='cuda:0')), PSNR 66.74727306798981, SSIM 0.9991190278073706,
+Train_epoch_78 : G_Loss= 1.12036; D_Loss= 0.00019; SSIM= 0.99912; PSNR= 66.74727
+Train_epoch_79: learning_rate= 0.000125
+epoch 79, [0/34], loss (tensor([1.5634], device='cuda:0'),tensor([0.0001], device='cuda:0')), PSNR 83.99633045229399, SSIM 0.9999926057344537,
+epoch 79, [10/34], loss (tensor([1.2960], device='cuda:0'),tensor([0.0001], device='cuda:0')), PSNR 92.12546401872254, SSIM 0.9999996787479101,
+epoch 79, [20/34], loss (tensor([2.2302], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR 95.13576397536235, SSIM 0.9999995745580431,
+epoch 79, [30/34], loss (tensor([0.4412], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR 67.40521704171974, SSIM 0.9998532107795451,
+Train_epoch_79 : G_Loss= 1.11007; D_Loss= 0.00023; SSIM= 0.99985; PSNR= 67.40522
+Train_epoch_80: learning_rate= 6.25e-05
+epoch 80, [0/34], loss (tensor([1.2780], device='cuda:0'),tensor([0.0005], device='cuda:0')), PSNR 75.59333888096911, SSIM 0.9999529421327046,
+epoch 80, [10/34], loss (tensor([1.1474], device='cuda:0'),tensor([0.0001], device='cuda:0')), PSNR 85.13576397536235, SSIM 0.9999991989818877,
+epoch 80, [20/34], loss (tensor([1.2109], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 80, [30/34], loss (tensor([1.5657], device='cuda:0'),tensor([0.0001], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+Train_epoch_80 : G_Loss= 1.08788; D_Loss= 0.00021; SSIM= 1.00000; PSNR= inf
+Train_epoch_81: learning_rate= 6.25e-05
+epoch 81, [0/34], loss (tensor([1.4303], device='cuda:0'),tensor([9.6399e-05], device='cuda:0')), PSNR 70.66418366194017, SSIM 0.9995323657079387,
+epoch 81, [10/34], loss (tensor([0.9777], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR 64.16319087842817, SSIM 0.997638510124046,
+epoch 81, [20/34], loss (tensor([1.5438], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR 81.71153716714029, SSIM 0.9999856060402027,
+epoch 81, [30/34], loss (tensor([0.5931], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+Train_epoch_81 : G_Loss= 1.07711; D_Loss= 0.00017; SSIM= 1.00000; PSNR= inf
+Train_epoch_82: learning_rate= 6.25e-05
+epoch 82, [0/34], loss (tensor([1.5820], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR 72.5830389243293, SSIM 0.9999246652063115,
+epoch 82, [10/34], loss (tensor([0.4432], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR 69.30377623567614, SSIM 0.9999471875100812,
+epoch 82, [20/34], loss (tensor([1.5345], device='cuda:0'),tensor([0.0001], device='cuda:0')), PSNR 83.37485138480554, SSIM 0.9999912403667915,
+epoch 82, [30/34], loss (tensor([1.5816], device='cuda:0'),tensor([0.0001], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+Train_epoch_82 : G_Loss= 1.08323; D_Loss= 0.00023; SSIM= 1.00000; PSNR= inf
+Train_epoch_83: learning_rate= 6.25e-05
+epoch 83, [0/34], loss (tensor([0.6460], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR 95.13576397536235, SSIM 0.9999997568903103,
+epoch 83, [10/34], loss (tensor([1.5481], device='cuda:0'),tensor([9.3223e-05], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 83, [20/34], loss (tensor([0.6505], device='cuda:0'),tensor([0.0003], device='cuda:0')), PSNR 80.98603049565418, SSIM 0.9999795854808935,
+epoch 83, [30/34], loss (tensor([0.8670], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR 90.36455142816573, SSIM 0.9999986903380131,
+Train_epoch_83 : G_Loss= 1.07606; D_Loss= 0.00018; SSIM= 1.00000; PSNR= 90.36455
+Train_epoch_84: learning_rate= 6.25e-05
+epoch 84, [0/34], loss (tensor([3.0279], device='cuda:0'),tensor([0.0001], device='cuda:0')), PSNR 84.3439515148861, SSIM 0.9999947102927819,
+epoch 84, [10/34], loss (tensor([1.2526], device='cuda:0'),tensor([0.0001], device='cuda:0')), PSNR 73.31732809591463, SSIM 0.9998855187469613,
+epoch 84, [20/34], loss (tensor([0.4682], device='cuda:0'),tensor([0.0001], device='cuda:0')), PSNR 52.0303176889928, SSIM 0.9454442051887371,
+epoch 84, [30/34], loss (tensor([0.5423], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR 69.5247501388718, SSIM 0.9998762780742906,
+Train_epoch_84 : G_Loss= 1.07613; D_Loss= 0.00019; SSIM= 0.99988; PSNR= 69.52475
+Train_epoch_85: learning_rate= 6.25e-05
+epoch 85, [0/34], loss (tensor([1.2313], device='cuda:0'),tensor([0.0001], device='cuda:0')), PSNR 73.7056159728214, SSIM 0.9998978327446353,
+epoch 85, [10/34], loss (tensor([0.9267], device='cuda:0'),tensor([0.0001], device='cuda:0')), PSNR 95.13576397536235, SSIM 0.9999999826350222,
+epoch 85, [20/34], loss (tensor([1.4413], device='cuda:0'),tensor([0.0001], device='cuda:0')), PSNR 70.71096628471787, SSIM 0.9995314201930137,
+epoch 85, [30/34], loss (tensor([0.6496], device='cuda:0'),tensor([0.0003], device='cuda:0')), PSNR 80.98603049565418, SSIM 0.9999795854808935,
+Train_epoch_85 : G_Loss= 1.06860; D_Loss= 0.00017; SSIM= 0.99998; PSNR= 80.98603
+Train_epoch_86: learning_rate= 6.25e-05
+epoch 86, [0/34], loss (tensor([0.7893], device='cuda:0'),tensor([0.0001], device='cuda:0')), PSNR 76.6847835752198, SSIM 0.999980746595533,
+epoch 86, [10/34], loss (tensor([0.4195], device='cuda:0'),tensor([0.0007], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 86, [20/34], loss (tensor([1.1312], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR 79.007925408165, SSIM 0.9999688346990161,
+epoch 86, [30/34], loss (tensor([1.3965], device='cuda:0'),tensor([9.7984e-05], device='cuda:0')), PSNR 84.7218371237801, SSIM 0.9999969543638043,
+Train_epoch_86 : G_Loss= 1.06812; D_Loss= 0.00019; SSIM= 1.00000; PSNR= 84.72184
+Train_epoch_87: learning_rate= 6.25e-05
+epoch 87, [0/34], loss (tensor([2.9751], device='cuda:0'),tensor([0.0001], device='cuda:0')), PSNR 83.67448361857997, SSIM 0.9999934884440469,
+epoch 87, [10/34], loss (tensor([1.3150], device='cuda:0'),tensor([0.0001], device='cuda:0')), PSNR 89.11516406208273, SSIM 0.9999982696583586,
+epoch 87, [20/34], loss (tensor([0.4891], device='cuda:0'),tensor([6.7027e-05], device='cuda:0')), PSNR 71.99709177167082, SSIM 0.9999455784715849,
+epoch 87, [30/34], loss (tensor([1.4279], device='cuda:0'),tensor([0.0001], device='cuda:0')), PSNR 70.54183909777005, SSIM 0.9995297246457272,
+Train_epoch_87 : G_Loss= 1.06204; D_Loss= 0.00018; SSIM= 0.99953; PSNR= 70.54184
+Train_epoch_88: learning_rate= 6.25e-05
+epoch 88, [0/34], loss (tensor([0.9835], device='cuda:0'),tensor([0.0003], device='cuda:0')), PSNR 64.09772676580279, SSIM 0.9976784077233828,
+epoch 88, [10/34], loss (tensor([0.7512], device='cuda:0'),tensor([0.0001], device='cuda:0')), PSNR 66.5383783133909, SSIM 0.999100698237396,
+epoch 88, [20/34], loss (tensor([0.5824], device='cuda:0'),tensor([0.0001], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 88, [30/34], loss (tensor([1.5759], device='cuda:0'),tensor([9.2778e-05], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+Train_epoch_88 : G_Loss= 1.05942; D_Loss= 0.00018; SSIM= 1.00000; PSNR= inf
+Train_epoch_89: learning_rate= 6.25e-05
+epoch 89, [0/34], loss (tensor([2.0596], device='cuda:0'),tensor([0.0001], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 89, [10/34], loss (tensor([0.6021], device='cuda:0'),tensor([0.0003], device='cuda:0')), PSNR 81.33365155824629, SSIM 0.9999796473323096,
+epoch 89, [20/34], loss (tensor([1.1176], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR 77.73213708041992, SSIM 0.9999558085870606,
+epoch 89, [30/34], loss (tensor([0.9785], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR 64.12173046980905, SSIM 0.9976312484766768,
+Train_epoch_89 : G_Loss= 1.05877; D_Loss= 0.00018; SSIM= 0.99763; PSNR= 64.12173
+Train_epoch_90: learning_rate= 6.25e-05
+epoch 90, [0/34], loss (tensor([2.0684], device='cuda:0'),tensor([0.0001], device='cuda:0')), PSNR 95.13576397536235, SSIM 0.9999995745580431,
+epoch 90, [10/34], loss (tensor([1.8680], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR 59.27777388523235, SSIM 0.9911623786973563,
+epoch 90, [20/34], loss (tensor([1.1944], device='cuda:0'),tensor([0.0004], device='cuda:0')), PSNR 75.99762545152518, SSIM 0.999958797567679,
+epoch 90, [30/34], loss (tensor([1.2042], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+Train_epoch_90 : G_Loss= 1.05830; D_Loss= 0.00017; SSIM= 1.00000; PSNR= inf
+Train_epoch_91: learning_rate= 6.25e-05
+epoch 91, [0/34], loss (tensor([1.1214], device='cuda:0'),tensor([0.0001], device='cuda:0')), PSNR 90.36455142816573, SSIM 0.9999997772131869,
+epoch 91, [10/34], loss (tensor([0.4179], device='cuda:0'),tensor([8.2119e-05], device='cuda:0')), PSNR 67.33259085396084, SSIM 0.9998497469881108,
+epoch 91, [20/34], loss (tensor([1.1011], device='cuda:0'),tensor([0.0003], device='cuda:0')), PSNR 82.58303892432929, SSIM 0.9999951406421544,
+epoch 91, [30/34], loss (tensor([1.1692], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR 76.6847835752198, SSIM 0.9999374229450972,
+Train_epoch_91 : G_Loss= 1.05499; D_Loss= 0.00019; SSIM= 0.99994; PSNR= 76.68478
+Train_epoch_92: learning_rate= 6.25e-05
+epoch 92, [0/34], loss (tensor([0.7560], device='cuda:0'),tensor([0.0001], device='cuda:0')), PSNR 66.70343619438226, SSIM 0.9991155840990753,
+epoch 92, [10/34], loss (tensor([1.1050], device='cuda:0'),tensor([0.0001], device='cuda:0')), PSNR 78.80107941956649, SSIM 0.999967701734079,
+epoch 92, [20/34], loss (tensor([0.7885], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR 78.41478539600519, SSIM 0.9999889884181044,
+epoch 92, [30/34], loss (tensor([0.6445], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR 95.13576397536235, SSIM 0.9999997568903103,
+Train_epoch_92 : G_Loss= 1.05213; D_Loss= 0.00018; SSIM= 1.00000; PSNR= 95.13576
+Train_epoch_93: learning_rate= 6.25e-05
+epoch 93, [0/34], loss (tensor([1.1556], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 93, [10/34], loss (tensor([1.8595], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR 59.2676412809286, SSIM 0.9911580074896806,
+epoch 93, [20/34], loss (tensor([0.3541], device='cuda:0'),tensor([0.0001], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 93, [30/34], loss (tensor([0.5564], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR 71.71153716714029, SSIM 0.9999472965808782,
+Train_epoch_93 : G_Loss= 1.05193; D_Loss= 0.00019; SSIM= 0.99995; PSNR= 71.71154
+Train_epoch_94: learning_rate= 6.25e-05
+epoch 94, [0/34], loss (tensor([1.3333], device='cuda:0'),tensor([0.0001], device='cuda:0')), PSNR 82.34822796583407, SSIM 0.999993667526255,
+epoch 94, [10/34], loss (tensor([1.8739], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR 59.2755201514926, SSIM 0.9911504450276756,
+epoch 94, [20/34], loss (tensor([0.5319], device='cuda:0'),tensor([0.0001], device='cuda:0')), PSNR 71.73132282696118, SSIM 0.9999478315646052,
+epoch 94, [30/34], loss (tensor([0.3463], device='cuda:0'),tensor([0.0001], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+Train_epoch_94 : G_Loss= 1.04299; D_Loss= 0.00018; SSIM= 1.00000; PSNR= inf
+Train_epoch_95: learning_rate= 6.25e-05
+epoch 95, [0/34], loss (tensor([0.4866], device='cuda:0'),tensor([6.9703e-05], device='cuda:0')), PSNR 71.40664394566129, SSIM 0.9999311361171611,
+epoch 95, [10/34], loss (tensor([0.6767], device='cuda:0'),tensor([0.0004], device='cuda:0')), PSNR 80.36455142816573, SSIM 0.9999864790385596,
+epoch 95, [20/34], loss (tensor([1.3861], device='cuda:0'),tensor([9.7765e-05], device='cuda:0')), PSNR 70.55694500802244, SSIM 0.9995296567800046,
+epoch 95, [30/34], loss (tensor([0.5883], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+Train_epoch_95 : G_Loss= 1.04291; D_Loss= 0.00018; SSIM= 1.00000; PSNR= inf
+Train_epoch_96: learning_rate= 6.25e-05
+epoch 96, [0/34], loss (tensor([0.5730], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 96, [10/34], loss (tensor([0.5586], device='cuda:0'),tensor([0.0001], device='cuda:0')), PSNR 73.8324262904123, SSIM 0.9999820234157185,
+epoch 96, [20/34], loss (tensor([0.8911], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR 92.12546401872254, SSIM 0.9999999218575997,
+epoch 96, [30/34], loss (tensor([0.4269], device='cuda:0'),tensor([6.4694e-05], device='cuda:0')), PSNR 66.59270355735156, SSIM 0.999802030019402,
+Train_epoch_96 : G_Loss= 1.04300; D_Loss= 0.00018; SSIM= 0.99980; PSNR= 66.59270
+Train_epoch_97: learning_rate= 6.25e-05
+epoch 97, [0/34], loss (tensor([0.9274], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR 64.08747993882581, SSIM 0.9976769985833104,
+epoch 97, [10/34], loss (tensor([1.3788], device='cuda:0'),tensor([0.0001], device='cuda:0')), PSNR 70.6953160161816, SSIM 0.9995272698118977,
+epoch 97, [20/34], loss (tensor([1.1595], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 97, [30/34], loss (tensor([0.5317], device='cuda:0'),tensor([0.0001], device='cuda:0')), PSNR 78.90327107138336, SSIM 0.9999784167457869,
+Train_epoch_97 : G_Loss= 1.03969; D_Loss= 0.00019; SSIM= 0.99998; PSNR= 78.90327
+Train_epoch_98: learning_rate= 6.25e-05
+epoch 98, [0/34], loss (tensor([0.3891], device='cuda:0'),tensor([0.0005], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 98, [10/34], loss (tensor([1.4718], device='cuda:0'),tensor([9.2181e-05], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 98, [20/34], loss (tensor([0.5851], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR inf, SSIM 1.0,
+Warning: NaN or Inf found in input tensor.
+epoch 98, [30/34], loss (tensor([0.5058], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR 78.90327107138336, SSIM 0.9999784167457869,
+Train_epoch_98 : G_Loss= 1.03692; D_Loss= 0.00017; SSIM= 0.99998; PSNR= 78.90327
+Train_epoch_99: learning_rate= 6.25e-05
+epoch 99, [0/34], loss (tensor([1.2135], device='cuda:0'),tensor([0.0001], device='cuda:0')), PSNR 73.4625906278806, SSIM 0.9998903958536268,
+epoch 99, [10/34], loss (tensor([1.5437], device='cuda:0'),tensor([0.0002], device='cuda:0')), PSNR 71.29761031555805, SSIM 0.9999028171915008,
+epoch 99, [20/34], loss (tensor([1.2198], device='cuda:0'),tensor([9.8638e-05], device='cuda:0')), PSNR 95.13576397536235, SSIM 0.9999999218575997,
+epoch 99, [30/34], loss (tensor([1.1666], device='cuda:0'),tensor([0.0004], device='cuda:0')), PSNR 75.13576397536235, SSIM 0.9999410564268526,
+Train_epoch_99 : G_Loss= 1.03183; D_Loss= 0.00017; SSIM= 0.99994; PSNR= 75.13576

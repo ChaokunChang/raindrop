@@ -1,0 +1,1739 @@
+Running with args:Namespace(batch_size=1, d_weights='dis.pkl', dropout_keep_prob=1, epochs=10, evaluate_every=10, g_weights='gen.pkl', gpu='0', gt_dir='../data/raindrop_data/train/gt', input_dir='../data/raindrop_data/train/data', interval=20, learning_rate=0.001, log_path='../logs/', mask_dir='../data/demo/train/mask', mode='test', model_dir='weights', optim='Adam', output_dir='../data/demo/train/output', predict=True, ratio=20, show_every_nsteps=10, summary_dir='../data/summary/', train=False, weight_decay=0)
+Processing image: 0_rain.png
+PSNR is 26.9326 and SSIM is 0.8882
+Processing image: 100_rain.png
+PSNR is 27.9357 and SSIM is 0.8929
+Processing image: 101_rain.png
+PSNR is 22.5984 and SSIM is 0.7205
+Processing image: 102_rain.png
+PSNR is 31.1517 and SSIM is 0.9130
+Processing image: 103_rain.png
+PSNR is 28.2050 and SSIM is 0.9099
+Processing image: 104_rain.png
+PSNR is 27.5134 and SSIM is 0.8814
+Processing image: 105_rain.png
+PSNR is 22.1834 and SSIM is 0.7304
+Processing image: 106_rain.png
+PSNR is 26.2273 and SSIM is 0.8510
+Processing image: 107_rain.png
+PSNR is 25.4371 and SSIM is 0.8308
+Processing image: 108_rain.png
+PSNR is 29.7464 and SSIM is 0.9153
+Processing image: 109_rain.png
+PSNR is 28.6495 and SSIM is 0.9095
+Processing image: 10_rain.png
+PSNR is 23.1121 and SSIM is 0.5073
+Processing image: 110_rain.png
+PSNR is 31.0403 and SSIM is 0.8124
+Processing image: 111_rain.png
+PSNR is 29.7577 and SSIM is 0.8731
+Processing image: 112_rain.png
+PSNR is 26.7911 and SSIM is 0.8520
+Processing image: 113_rain.png
+PSNR is 31.6542 and SSIM is 0.9021
+Processing image: 114_rain.png
+PSNR is 29.8678 and SSIM is 0.8641
+Processing image: 115_rain.png
+PSNR is 14.3083 and SSIM is 0.5962
+Processing image: 116_rain.png
+PSNR is 21.5527 and SSIM is 0.8144
+Processing image: 117_rain.png
+PSNR is 24.4477 and SSIM is 0.8282
+Processing image: 118_rain.png
+PSNR is 28.0938 and SSIM is 0.9248
+Processing image: 119_rain.png
+PSNR is 29.5075 and SSIM is 0.9086
+Processing image: 11_rain.png
+PSNR is 23.2120 and SSIM is 0.8720
+Processing image: 120_rain.png
+PSNR is 27.5886 and SSIM is 0.8891
+Processing image: 121_rain.png
+PSNR is 29.4218 and SSIM is 0.9189
+Processing image: 122_rain.png
+PSNR is 24.9867 and SSIM is 0.8441
+Processing image: 123_rain.png
+PSNR is 26.7731 and SSIM is 0.8828
+Processing image: 124_rain.png
+PSNR is 25.0088 and SSIM is 0.8830
+Processing image: 125_rain.png
+PSNR is 29.6936 and SSIM is 0.9048
+Processing image: 126_rain.png
+PSNR is 24.6109 and SSIM is 0.8250
+Processing image: 127_rain.png
+PSNR is 28.2517 and SSIM is 0.7761
+Processing image: 128_rain.png
+PSNR is 28.8393 and SSIM is 0.8733
+Processing image: 129_rain.png
+PSNR is 23.6511 and SSIM is 0.8214
+Processing image: 12_rain.png
+PSNR is 30.9695 and SSIM is 0.9165
+Processing image: 130_rain.png
+PSNR is 25.4985 and SSIM is 0.8654
+Processing image: 131_rain.png
+PSNR is 25.0091 and SSIM is 0.8207
+Processing image: 132_rain.png
+PSNR is 27.8789 and SSIM is 0.8936
+Processing image: 133_rain.png
+PSNR is 29.4807 and SSIM is 0.9296
+Processing image: 134_rain.png
+PSNR is 28.5491 and SSIM is 0.9133
+Processing image: 135_rain.png
+PSNR is 24.9232 and SSIM is 0.8237
+Processing image: 136_rain.png
+PSNR is 26.9643 and SSIM is 0.8686
+Processing image: 137_rain.png
+PSNR is 26.2838 and SSIM is 0.8686
+Processing image: 138_rain.png
+PSNR is 25.8369 and SSIM is 0.8559
+Processing image: 139_rain.png
+PSNR is 22.4960 and SSIM is 0.8461
+Processing image: 13_rain.png
+PSNR is 23.4244 and SSIM is 0.7084
+Processing image: 140_rain.png
+PSNR is 26.2601 and SSIM is 0.8641
+Processing image: 141_rain.png
+PSNR is 26.9777 and SSIM is 0.9034
+Processing image: 142_rain.png
+PSNR is 27.6471 and SSIM is 0.8926
+Processing image: 143_rain.png
+PSNR is 30.6951 and SSIM is 0.9057
+Processing image: 144_rain.png
+PSNR is 26.4383 and SSIM is 0.8551
+Processing image: 145_rain.png
+PSNR is 27.2668 and SSIM is 0.9049
+Processing image: 146_rain.png
+PSNR is 27.6573 and SSIM is 0.8308
+Processing image: 147_rain.png
+PSNR is 25.9281 and SSIM is 0.8309
+Processing image: 148_rain.png
+PSNR is 28.4083 and SSIM is 0.8803
+Processing image: 149_rain.png
+PSNR is 27.2265 and SSIM is 0.8297
+Processing image: 14_rain.png
+PSNR is 24.9894 and SSIM is 0.8611
+Processing image: 150_rain.png
+PSNR is 23.7322 and SSIM is 0.8106
+Processing image: 151_rain.png
+PSNR is 23.1953 and SSIM is 0.7559
+Processing image: 152_rain.png
+PSNR is 28.1503 and SSIM is 0.9139
+Processing image: 153_rain.png
+PSNR is 28.6910 and SSIM is 0.9316
+Processing image: 154_rain.png
+PSNR is 22.4213 and SSIM is 0.5275
+Processing image: 155_rain.png
+PSNR is 27.1395 and SSIM is 0.7151
+Processing image: 156_rain.png
+PSNR is 27.4057 and SSIM is 0.8774
+Processing image: 157_rain.png
+PSNR is 27.7564 and SSIM is 0.8895
+Processing image: 158_rain.png
+PSNR is 25.1027 and SSIM is 0.8221
+Processing image: 159_rain.png
+PSNR is 26.8109 and SSIM is 0.8658
+Processing image: 15_rain.png
+PSNR is 26.7759 and SSIM is 0.8912
+Processing image: 160_rain.png
+PSNR is 26.7485 and SSIM is 0.8796
+Processing image: 161_rain.png
+PSNR is 28.0944 and SSIM is 0.9045
+Processing image: 162_rain.png
+PSNR is 24.8506 and SSIM is 0.8364
+Processing image: 163_rain.png
+PSNR is 24.0382 and SSIM is 0.5147
+Processing image: 164_rain.png
+PSNR is 22.5780 and SSIM is 0.7392
+Processing image: 165_rain.png
+PSNR is 22.1081 and SSIM is 0.8560
+Processing image: 166_rain.png
+PSNR is 26.9123 and SSIM is 0.8355
+Processing image: 167_rain.png
+PSNR is 25.7538 and SSIM is 0.7938
+Processing image: 168_rain.png
+PSNR is 24.9765 and SSIM is 0.8785
+Processing image: 169_rain.png
+PSNR is 26.8716 and SSIM is 0.8969
+Processing image: 16_rain.png
+PSNR is 30.6957 and SSIM is 0.9419
+Processing image: 170_rain.png
+PSNR is 29.8337 and SSIM is 0.6869
+Processing image: 171_rain.png
+PSNR is 28.3095 and SSIM is 0.8560
+Processing image: 172_rain.png
+PSNR is 29.6086 and SSIM is 0.9803
+Processing image: 173_rain.png
+PSNR is 25.9345 and SSIM is 0.8369
+Processing image: 174_rain.png
+PSNR is 24.6743 and SSIM is 0.6439
+Processing image: 175_rain.png
+PSNR is 28.8040 and SSIM is 0.6344
+Processing image: 176_rain.png
+PSNR is 25.1529 and SSIM is 0.8536
+Processing image: 177_rain.png
+PSNR is 24.9728 and SSIM is 0.8820
+Processing image: 178_rain.png
+PSNR is 28.7529 and SSIM is 0.8812
+Processing image: 179_rain.png
+PSNR is 28.3879 and SSIM is 0.8533
+Processing image: 17_rain.png
+PSNR is 27.7548 and SSIM is 0.8750
+Processing image: 180_rain.png
+PSNR is 25.8473 and SSIM is 0.8587
+Processing image: 181_rain.png
+PSNR is 25.1974 and SSIM is 0.8235
+Processing image: 182_rain.png
+PSNR is 28.4622 and SSIM is 0.8549
+Processing image: 183_rain.png
+PSNR is 28.0015 and SSIM is 0.9230
+Processing image: 184_rain.png
+PSNR is 26.0641 and SSIM is 0.8442
+Processing image: 185_rain.png
+PSNR is 23.4858 and SSIM is 0.6772
+Processing image: 186_rain.png
+PSNR is 25.1170 and SSIM is 0.6396
+Processing image: 187_rain.png
+PSNR is 21.6615 and SSIM is 0.7931
+Processing image: 188_rain.png
+PSNR is 26.2904 and SSIM is 0.8780
+Processing image: 189_rain.png
+PSNR is 25.4136 and SSIM is 0.8079
+Processing image: 18_rain.png
+PSNR is 29.0216 and SSIM is 0.8961
+Processing image: 190_rain.png
+PSNR is 28.2223 and SSIM is 0.8152
+Processing image: 191_rain.png
+PSNR is 24.7052 and SSIM is 0.8279
+Processing image: 192_rain.png
+PSNR is 23.3975 and SSIM is 0.6834
+Processing image: 193_rain.png
+PSNR is 23.2370 and SSIM is 0.8892
+Processing image: 194_rain.png
+PSNR is 26.0967 and SSIM is 0.8455
+Processing image: 195_rain.png
+PSNR is 26.7651 and SSIM is 0.6262
+Processing image: 196_rain.png
+PSNR is 27.9332 and SSIM is 0.8386
+Processing image: 197_rain.png
+PSNR is 25.8108 and SSIM is 0.8783
+Processing image: 198_rain.png
+PSNR is 27.7184 and SSIM is 0.8798
+Processing image: 199_rain.png
+PSNR is 30.6165 and SSIM is 0.9291
+Processing image: 19_rain.png
+PSNR is 24.1507 and SSIM is 0.6830
+Processing image: 1_rain.png
+PSNR is 26.9477 and SSIM is 0.8967
+Processing image: 200_rain.png
+PSNR is 41.2265 and SSIM is 0.9951
+Processing image: 201_rain.png
+PSNR is 28.5395 and SSIM is 0.9159
+Processing image: 202_rain.png
+PSNR is 26.7356 and SSIM is 0.8674
+Processing image: 203_rain.png
+PSNR is 25.8793 and SSIM is 0.8881
+Processing image: 204_rain.png
+PSNR is 26.8967 and SSIM is 0.8723
+Processing image: 205_rain.png
+PSNR is 28.2736 and SSIM is 0.8859
+Processing image: 206_rain.png
+PSNR is 26.4531 and SSIM is 0.8682
+Processing image: 207_rain.png
+PSNR is 17.9799 and SSIM is 0.4994
+Processing image: 208_rain.png
+PSNR is 28.4370 and SSIM is 0.8760
+Processing image: 209_rain.png
+PSNR is 28.8527 and SSIM is 0.9243
+Processing image: 20_rain.png
+PSNR is 26.7770 and SSIM is 0.8768
+Processing image: 210_rain.png
+PSNR is 25.4640 and SSIM is 0.7428
+Processing image: 211_rain.png
+PSNR is 30.7953 and SSIM is 0.9149
+Processing image: 212_rain.png
+PSNR is 19.0444 and SSIM is 0.7179
+Processing image: 213_rain.png
+PSNR is 27.0246 and SSIM is 0.8635
+Processing image: 214_rain.png
+PSNR is 15.2232 and SSIM is 0.6025
+Processing image: 215_rain.png
+PSNR is 26.8647 and SSIM is 0.8680
+Processing image: 216_rain.png
+PSNR is 25.5226 and SSIM is 0.6594
+Processing image: 217_rain.png
+PSNR is 27.9531 and SSIM is 0.8955
+Processing image: 218_rain.png
+PSNR is 23.9502 and SSIM is 0.7553
+Processing image: 219_rain.png
+PSNR is 30.1250 and SSIM is 0.8718
+Processing image: 21_rain.png
+PSNR is 27.6272 and SSIM is 0.8593
+Processing image: 220_rain.png
+PSNR is 23.2418 and SSIM is 0.5978
+Processing image: 221_rain.png
+PSNR is 15.1991 and SSIM is 0.5795
+Processing image: 222_rain.png
+PSNR is 27.9583 and SSIM is 0.9134
+Processing image: 223_rain.png
+PSNR is 26.9304 and SSIM is 0.8649
+Processing image: 224_rain.png
+PSNR is 24.4111 and SSIM is 0.7964
+Processing image: 225_rain.png
+PSNR is 29.2860 and SSIM is 0.8903
+Processing image: 226_rain.png
+PSNR is 27.4142 and SSIM is 0.6870
+Processing image: 227_rain.png
+PSNR is 25.4223 and SSIM is 0.8485
+Processing image: 228_rain.png
+PSNR is 24.7862 and SSIM is 0.8467
+Processing image: 229_rain.png
+PSNR is 27.7583 and SSIM is 0.8746
+Processing image: 22_rain.png
+PSNR is 26.2058 and SSIM is 0.8713
+Processing image: 230_rain.png
+PSNR is 26.0005 and SSIM is 0.8654
+Processing image: 231_rain.png
+PSNR is 24.3648 and SSIM is 0.7796
+Processing image: 232_rain.png
+PSNR is 26.6848 and SSIM is 0.9106
+Processing image: 233_rain.png
+PSNR is 28.0772 and SSIM is 0.9232
+Processing image: 234_rain.png
+PSNR is 27.8092 and SSIM is 0.8314
+Processing image: 235_rain.png
+PSNR is 14.9443 and SSIM is 0.5065
+Processing image: 236_rain.png
+PSNR is 27.8819 and SSIM is 0.8868
+Processing image: 237_rain.png
+PSNR is 30.2072 and SSIM is 0.9399
+Processing image: 238_rain.png
+PSNR is 29.6762 and SSIM is 0.8099
+Processing image: 239_rain.png
+PSNR is 30.1254 and SSIM is 0.9311
+Processing image: 23_rain.png
+PSNR is 29.9283 and SSIM is 0.9126
+Processing image: 240_rain.png
+PSNR is 28.2609 and SSIM is 0.9046
+Processing image: 241_rain.png
+PSNR is 24.1206 and SSIM is 0.5657
+Processing image: 242_rain.png
+PSNR is 26.9265 and SSIM is 0.8531
+Processing image: 243_rain.png
+PSNR is 28.4301 and SSIM is 0.8774
+Processing image: 244_rain.png
+PSNR is 23.4521 and SSIM is 0.6442
+Processing image: 245_rain.png
+PSNR is 25.7289 and SSIM is 0.8719
+Processing image: 246_rain.png
+PSNR is 31.0531 and SSIM is 0.9404
+Processing image: 247_rain.png
+PSNR is 26.1288 and SSIM is 0.7223
+Processing image: 248_rain.png
+PSNR is 27.5530 and SSIM is 0.6743
+Processing image: 249_rain.png
+PSNR is 29.8180 and SSIM is 0.6739
+Processing image: 24_rain.png
+PSNR is 30.3800 and SSIM is 0.9296
+Processing image: 250_rain.png
+PSNR is 26.1142 and SSIM is 0.8759
+Processing image: 251_rain.png
+PSNR is 26.2554 and SSIM is 0.9171
+Processing image: 252_rain.png
+PSNR is 26.6554 and SSIM is 0.8837
+Processing image: 253_rain.png
+PSNR is 28.5359 and SSIM is 0.9310
+Processing image: 254_rain.png
+PSNR is 28.3224 and SSIM is 0.9072
+Processing image: 255_rain.png
+PSNR is 26.3060 and SSIM is 0.7946
+Processing image: 256_rain.png
+PSNR is 23.7984 and SSIM is 0.7288
+Processing image: 257_rain.png
+PSNR is 28.4504 and SSIM is 0.8601
+Processing image: 258_rain.png
+PSNR is 25.5664 and SSIM is 0.6398
+Processing image: 259_rain.png
+PSNR is 29.8639 and SSIM is 0.9200
+Processing image: 25_rain.png
+PSNR is 27.2904 and SSIM is 0.8788
+Processing image: 260_rain.png
+PSNR is 26.2027 and SSIM is 0.8703
+Processing image: 261_rain.png
+PSNR is 29.6784 and SSIM is 0.9192
+Processing image: 262_rain.png
+PSNR is 29.5623 and SSIM is 0.8931
+Processing image: 263_rain.png
+PSNR is 29.3224 and SSIM is 0.9253
+Processing image: 264_rain.png
+PSNR is 28.4824 and SSIM is 0.9016
+Processing image: 265_rain.png
+PSNR is 28.0682 and SSIM is 0.6621
+Processing image: 266_rain.png
+PSNR is 24.2091 and SSIM is 0.7583
+Processing image: 267_rain.png
+PSNR is 24.9082 and SSIM is 0.8490
+Processing image: 268_rain.png
+PSNR is 25.2806 and SSIM is 0.8592
+Processing image: 269_rain.png
+PSNR is 28.6687 and SSIM is 0.9340
+Processing image: 26_rain.png
+PSNR is 26.0940 and SSIM is 0.8266
+Processing image: 270_rain.png
+PSNR is 25.3934 and SSIM is 0.8566
+Processing image: 271_rain.png
+PSNR is 24.9149 and SSIM is 0.8251
+Processing image: 272_rain.png
+PSNR is 25.5876 and SSIM is 0.8906
+Processing image: 273_rain.png
+PSNR is 28.5211 and SSIM is 0.8620
+Processing image: 274_rain.png
+PSNR is 23.1554 and SSIM is 0.5320
+Processing image: 275_rain.png
+PSNR is 28.6060 and SSIM is 0.8558
+Processing image: 276_rain.png
+PSNR is 30.2763 and SSIM is 0.9277
+Processing image: 277_rain.png
+PSNR is 24.8131 and SSIM is 0.8484
+Processing image: 278_rain.png
+PSNR is 34.7176 and SSIM is 0.9860
+Processing image: 279_rain.png
+PSNR is 26.2729 and SSIM is 0.8665
+Processing image: 27_rain.png
+PSNR is 30.9938 and SSIM is 0.9365
+Processing image: 280_rain.png
+PSNR is 25.9307 and SSIM is 0.8587
+Processing image: 281_rain.png
+PSNR is 26.1718 and SSIM is 0.7128
+Processing image: 282_rain.png
+PSNR is 25.1048 and SSIM is 0.8473
+Processing image: 283_rain.png
+PSNR is 27.1501 and SSIM is 0.6762
+Processing image: 284_rain.png
+PSNR is 31.2652 and SSIM is 0.8575
+Processing image: 285_rain.png
+PSNR is 28.3416 and SSIM is 0.9006
+Processing image: 286_rain.png
+PSNR is 27.3445 and SSIM is 0.9030
+Processing image: 287_rain.png
+PSNR is 29.2497 and SSIM is 0.9093
+Processing image: 288_rain.png
+PSNR is 18.9044 and SSIM is 0.3632
+Processing image: 289_rain.png
+PSNR is 27.8672 and SSIM is 0.9191
+Processing image: 28_rain.png
+PSNR is 27.8075 and SSIM is 0.8472
+Processing image: 290_rain.png
+PSNR is 24.7641 and SSIM is 0.7949
+Processing image: 291_rain.png
+PSNR is 28.7565 and SSIM is 0.8843
+Processing image: 292_rain.png
+PSNR is 23.7242 and SSIM is 0.8024
+Processing image: 293_rain.png
+PSNR is 28.2919 and SSIM is 0.9082
+Processing image: 294_rain.png
+PSNR is 29.3846 and SSIM is 0.8932
+Processing image: 295_rain.png
+PSNR is 25.7851 and SSIM is 0.8106
+Processing image: 296_rain.png
+PSNR is 30.5012 and SSIM is 0.9197
+Processing image: 297_rain.png
+PSNR is 30.2634 and SSIM is 0.8949
+Processing image: 298_rain.png
+PSNR is 28.7313 and SSIM is 0.9028
+Processing image: 299_rain.png
+PSNR is 27.6707 and SSIM is 0.8933
+Processing image: 29_rain.png
+PSNR is 26.5792 and SSIM is 0.6363
+Processing image: 2_rain.png
+PSNR is 28.8737 and SSIM is 0.8818
+Processing image: 300_rain.png
+PSNR is 27.7187 and SSIM is 0.8961
+Processing image: 301_rain.png
+PSNR is 26.9793 and SSIM is 0.8495
+Processing image: 302_rain.png
+PSNR is 27.5128 and SSIM is 0.8557
+Processing image: 303_rain.png
+PSNR is 25.8320 and SSIM is 0.8649
+Processing image: 304_rain.png
+PSNR is 26.0516 and SSIM is 0.8978
+Processing image: 305_rain.png
+PSNR is 26.5931 and SSIM is 0.8756
+Processing image: 306_rain.png
+PSNR is 20.9103 and SSIM is 0.7940
+Processing image: 307_rain.png
+PSNR is 22.6059 and SSIM is 0.4596
+Processing image: 308_rain.png
+PSNR is 27.9610 and SSIM is 0.8851
+Processing image: 309_rain.png
+PSNR is 23.2699 and SSIM is 0.7393
+Processing image: 30_rain.png
+PSNR is 24.5337 and SSIM is 0.6677
+Processing image: 310_rain.png
+PSNR is 30.0016 and SSIM is 0.8942
+Processing image: 311_rain.png
+PSNR is 27.2737 and SSIM is 0.9049
+Processing image: 312_rain.png
+PSNR is 25.0830 and SSIM is 0.8450
+Processing image: 313_rain.png
+PSNR is 17.0994 and SSIM is 0.6941
+Processing image: 314_rain.png
+PSNR is 29.5953 and SSIM is 0.8826
+Processing image: 315_rain.png
+PSNR is 24.4542 and SSIM is 0.8769
+Processing image: 316_rain.png
+PSNR is 22.3936 and SSIM is 0.7530
+Processing image: 317_rain.png
+PSNR is 22.6720 and SSIM is 0.8608
+Processing image: 318_rain.png
+PSNR is 30.4650 and SSIM is 0.9267
+Processing image: 319_rain.png
+PSNR is 28.4694 and SSIM is 0.9169
+Processing image: 31_rain.png
+PSNR is 26.9253 and SSIM is 0.8470
+Processing image: 320_rain.png
+PSNR is 26.5890 and SSIM is 0.8344
+Processing image: 321_rain.png
+PSNR is 22.4201 and SSIM is 0.7443
+Processing image: 322_rain.png
+PSNR is 23.0337 and SSIM is 0.8804
+Processing image: 323_rain.png
+PSNR is 28.5949 and SSIM is 0.8465
+Processing image: 324_rain.png
+PSNR is 20.7722 and SSIM is 0.7970
+Processing image: 325_rain.png
+PSNR is 25.0131 and SSIM is 0.8072
+Processing image: 326_rain.png
+PSNR is 18.4995 and SSIM is 0.3416
+Processing image: 327_rain.png
+PSNR is 24.7398 and SSIM is 0.7729
+Processing image: 328_rain.png
+PSNR is 29.7503 and SSIM is 0.6818
+Processing image: 329_rain.png
+PSNR is 30.3076 and SSIM is 0.9295
+Processing image: 32_rain.png
+PSNR is 29.3874 and SSIM is 0.8963
+Processing image: 330_rain.png
+PSNR is 28.8777 and SSIM is 0.9190
+Processing image: 331_rain.png
+PSNR is 24.2962 and SSIM is 0.7956
+Processing image: 332_rain.png
+PSNR is 25.7729 and SSIM is 0.8822
+Processing image: 333_rain.png
+PSNR is 28.4999 and SSIM is 0.9587
+Processing image: 334_rain.png
+PSNR is 17.3171 and SSIM is 0.6238
+Processing image: 335_rain.png
+PSNR is 23.5360 and SSIM is 0.7412
+Processing image: 336_rain.png
+PSNR is 28.5432 and SSIM is 0.9029
+Processing image: 337_rain.png
+PSNR is 25.8142 and SSIM is 0.8679
+Processing image: 338_rain.png
+PSNR is 29.1802 and SSIM is 0.9203
+Processing image: 339_rain.png
+PSNR is 26.0247 and SSIM is 0.8836
+Processing image: 33_rain.png
+PSNR is 27.0351 and SSIM is 0.8820
+Processing image: 340_rain.png
+PSNR is 26.0141 and SSIM is 0.8567
+Processing image: 341_rain.png
+PSNR is 16.4362 and SSIM is 0.6868
+Processing image: 342_rain.png
+PSNR is 27.9972 and SSIM is 0.8855
+Processing image: 343_rain.png
+PSNR is 25.1899 and SSIM is 0.8647
+Processing image: 344_rain.png
+PSNR is 25.3692 and SSIM is 0.8849
+Processing image: 345_rain.png
+PSNR is 22.5725 and SSIM is 0.9642
+Processing image: 346_rain.png
+PSNR is 25.6794 and SSIM is 0.7829
+Processing image: 347_rain.png
+PSNR is 28.1709 and SSIM is 0.9031
+Processing image: 348_rain.png
+PSNR is 29.8047 and SSIM is 0.8991
+Processing image: 349_rain.png
+PSNR is 30.9664 and SSIM is 0.9424
+Processing image: 34_rain.png
+PSNR is 25.4668 and SSIM is 0.7379
+Processing image: 350_rain.png
+PSNR is 26.2112 and SSIM is 0.8563
+Processing image: 351_rain.png
+PSNR is 25.9775 and SSIM is 0.8664
+Processing image: 352_rain.png
+PSNR is 27.6272 and SSIM is 0.8490
+Processing image: 353_rain.png
+PSNR is 29.5585 and SSIM is 0.9464
+Processing image: 354_rain.png
+PSNR is 23.9751 and SSIM is 0.5725
+Processing image: 355_rain.png
+PSNR is 25.9492 and SSIM is 0.7931
+Processing image: 356_rain.png
+PSNR is 24.7252 and SSIM is 0.8625
+Processing image: 357_rain.png
+PSNR is 29.0618 and SSIM is 0.9131
+Processing image: 358_rain.png
+PSNR is 24.0076 and SSIM is 0.7745
+Processing image: 359_rain.png
+PSNR is 23.8321 and SSIM is 0.8393
+Processing image: 35_rain.png
+PSNR is 24.6226 and SSIM is 0.8778
+Processing image: 360_rain.png
+PSNR is 25.9612 and SSIM is 0.7965
+Processing image: 361_rain.png
+PSNR is 26.8259 and SSIM is 0.8499
+Processing image: 362_rain.png
+PSNR is 26.1125 and SSIM is 0.8919
+Processing image: 363_rain.png
+PSNR is 28.3917 and SSIM is 0.9065
+Processing image: 364_rain.png
+PSNR is 28.6152 and SSIM is 0.8722
+Processing image: 365_rain.png
+PSNR is 25.8754 and SSIM is 0.9062
+Processing image: 366_rain.png
+PSNR is 25.2464 and SSIM is 0.7266
+Processing image: 367_rain.png
+PSNR is 26.9886 and SSIM is 0.8518
+Processing image: 368_rain.png
+PSNR is 23.2650 and SSIM is 0.6850
+Processing image: 369_rain.png
+PSNR is 30.3545 and SSIM is 0.9016
+Processing image: 36_rain.png
+PSNR is 28.4037 and SSIM is 0.9265
+Processing image: 370_rain.png
+PSNR is 27.8580 and SSIM is 0.8873
+Processing image: 371_rain.png
+PSNR is 23.8332 and SSIM is 0.8246
+Processing image: 372_rain.png
+PSNR is 20.1074 and SSIM is 0.7012
+Processing image: 373_rain.png
+PSNR is 25.3688 and SSIM is 0.8718
+Processing image: 374_rain.png
+PSNR is 29.2047 and SSIM is 0.8302
+Processing image: 375_rain.png
+PSNR is 30.8340 and SSIM is 0.9354
+Processing image: 376_rain.png
+PSNR is 23.0832 and SSIM is 0.8525
+Processing image: 377_rain.png
+PSNR is 23.4418 and SSIM is 0.5123
+Processing image: 378_rain.png
+PSNR is 25.7504 and SSIM is 0.7903
+Processing image: 379_rain.png
+PSNR is 24.7570 and SSIM is 0.6267
+Processing image: 37_rain.png
+PSNR is 27.0573 and SSIM is 0.8938
+Processing image: 380_rain.png
+PSNR is 25.2948 and SSIM is 0.8578
+Processing image: 381_rain.png
+PSNR is 25.7008 and SSIM is 0.8617
+Processing image: 382_rain.png
+PSNR is 28.9430 and SSIM is 0.8788
+Processing image: 383_rain.png
+PSNR is 27.8875 and SSIM is 0.8810
+Processing image: 384_rain.png
+PSNR is 26.4478 and SSIM is 0.8977
+Processing image: 385_rain.png
+PSNR is 28.0242 and SSIM is 0.9104
+Processing image: 386_rain.png
+PSNR is 25.3868 and SSIM is 0.8685
+Processing image: 387_rain.png
+PSNR is 25.3945 and SSIM is 0.8630
+Processing image: 388_rain.png
+PSNR is 26.1201 and SSIM is 0.8652
+Processing image: 389_rain.png
+PSNR is 29.8696 and SSIM is 0.8938
+Processing image: 38_rain.png
+PSNR is 21.5010 and SSIM is 0.8062
+Processing image: 390_rain.png
+PSNR is 27.4918 and SSIM is 0.8825
+Processing image: 391_rain.png
+PSNR is 28.3401 and SSIM is 0.9258
+Processing image: 392_rain.png
+PSNR is 25.5368 and SSIM is 0.8750
+Processing image: 393_rain.png
+PSNR is 20.0511 and SSIM is 0.7773
+Processing image: 394_rain.png
+PSNR is 27.6235 and SSIM is 0.9022
+Processing image: 395_rain.png
+PSNR is 15.9375 and SSIM is 0.2846
+Processing image: 396_rain.png
+PSNR is 28.7929 and SSIM is 0.8974
+Processing image: 397_rain.png
+PSNR is 23.3147 and SSIM is 0.7681
+Processing image: 398_rain.png
+PSNR is 24.1873 and SSIM is 0.5934
+Processing image: 399_rain.png
+PSNR is 29.0305 and SSIM is 0.9077
+Processing image: 39_rain.png
+PSNR is 27.2330 and SSIM is 0.8895
+Processing image: 3_rain.png
+PSNR is 24.8371 and SSIM is 0.7363
+Processing image: 400_rain.png
+PSNR is 25.7510 and SSIM is 0.8535
+Processing image: 401_rain.png
+PSNR is 25.4772 and SSIM is 0.8383
+Processing image: 402_rain.png
+PSNR is 27.6677 and SSIM is 0.9047
+Processing image: 403_rain.png
+PSNR is 26.7660 and SSIM is 0.8989
+Processing image: 404_rain.png
+PSNR is 25.6157 and SSIM is 0.9126
+Processing image: 405_rain.png
+PSNR is 27.5261 and SSIM is 0.8985
+Processing image: 406_rain.png
+PSNR is 26.5033 and SSIM is 0.8219
+Processing image: 407_rain.png
+PSNR is 26.3803 and SSIM is 0.9061
+Processing image: 408_rain.png
+PSNR is 30.8482 and SSIM is 0.9246
+Processing image: 409_rain.png
+PSNR is 24.3215 and SSIM is 0.8620
+Processing image: 40_rain.png
+PSNR is 26.5208 and SSIM is 0.8741
+Processing image: 410_rain.png
+PSNR is 25.2873 and SSIM is 0.8764
+Processing image: 411_rain.png
+PSNR is 26.9906 and SSIM is 0.8882
+Processing image: 412_rain.png
+PSNR is 26.6023 and SSIM is 0.7393
+Processing image: 413_rain.png
+PSNR is 29.1400 and SSIM is 0.9460
+Processing image: 414_rain.png
+PSNR is 14.8933 and SSIM is 0.5026
+Processing image: 415_rain.png
+PSNR is 27.1779 and SSIM is 0.8823
+Processing image: 416_rain.png
+PSNR is 24.4872 and SSIM is 0.8531
+Processing image: 417_rain.png
+PSNR is 29.7274 and SSIM is 0.8551
+Processing image: 418_rain.png
+PSNR is 29.0930 and SSIM is 0.9118
+Processing image: 419_rain.png
+PSNR is 24.0290 and SSIM is 0.4204
+Processing image: 41_rain.png
+PSNR is 27.9401 and SSIM is 0.9126
+Processing image: 420_rain.png
+PSNR is 28.0854 and SSIM is 0.8383
+Processing image: 421_rain.png
+PSNR is 26.1575 and SSIM is 0.9179
+Processing image: 422_rain.png
+PSNR is 23.8497 and SSIM is 0.7876
+Processing image: 423_rain.png
+PSNR is 26.3444 and SSIM is 0.8676
+Processing image: 424_rain.png
+PSNR is 24.3593 and SSIM is 0.8486
+Processing image: 425_rain.png
+PSNR is 24.6798 and SSIM is 0.8603
+Processing image: 426_rain.png
+PSNR is 24.6493 and SSIM is 0.6587
+Processing image: 427_rain.png
+PSNR is 29.2407 and SSIM is 0.8788
+Processing image: 428_rain.png
+PSNR is 24.8915 and SSIM is 0.7832
+Processing image: 429_rain.png
+PSNR is 27.4250 and SSIM is 0.8902
+Processing image: 42_rain.png
+PSNR is 25.0960 and SSIM is 0.9156
+Processing image: 430_rain.png
+PSNR is 27.0978 and SSIM is 0.9008
+Processing image: 431_rain.png
+PSNR is 30.5328 and SSIM is 0.9211
+Processing image: 432_rain.png
+PSNR is 25.9855 and SSIM is 0.8755
+Processing image: 433_rain.png
+PSNR is 27.4094 and SSIM is 0.8689
+Processing image: 434_rain.png
+PSNR is 25.3272 and SSIM is 0.8645
+Processing image: 435_rain.png
+PSNR is 28.6394 and SSIM is 0.9100
+Processing image: 436_rain.png
+PSNR is 30.6834 and SSIM is 0.7537
+Processing image: 437_rain.png
+PSNR is 26.0746 and SSIM is 0.8364
+Processing image: 438_rain.png
+PSNR is 26.3993 and SSIM is 0.8415
+Processing image: 439_rain.png
+PSNR is 25.6151 and SSIM is 0.8801
+Processing image: 43_rain.png
+PSNR is 28.2489 and SSIM is 0.8908
+Processing image: 440_rain.png
+PSNR is 25.8359 and SSIM is 0.8782
+Processing image: 441_rain.png
+PSNR is 23.0847 and SSIM is 0.8848
+Processing image: 442_rain.png
+PSNR is 26.0156 and SSIM is 0.8683
+Processing image: 443_rain.png
+PSNR is 28.0892 and SSIM is 0.8929
+Processing image: 444_rain.png
+PSNR is 24.7054 and SSIM is 0.8811
+Processing image: 445_rain.png
+PSNR is 30.7575 and SSIM is 0.8848
+Processing image: 446_rain.png
+PSNR is 29.9121 and SSIM is 0.9158
+Processing image: 447_rain.png
+PSNR is 28.4909 and SSIM is 0.8932
+Processing image: 448_rain.png
+PSNR is 29.3019 and SSIM is 0.9039
+Processing image: 449_rain.png
+PSNR is 28.9575 and SSIM is 0.8997
+Processing image: 44_rain.png
+PSNR is 24.4489 and SSIM is 0.8229
+Processing image: 450_rain.png
+PSNR is 26.6541 and SSIM is 0.8534
+Processing image: 451_rain.png
+PSNR is 27.2086 and SSIM is 0.8949
+Processing image: 452_rain.png
+PSNR is 15.4978 and SSIM is 0.4597
+Processing image: 453_rain.png
+PSNR is 28.9894 and SSIM is 0.8930
+Processing image: 454_rain.png
+PSNR is 30.0739 and SSIM is 0.8831
+Processing image: 455_rain.png
+PSNR is 20.8340 and SSIM is 0.8248
+Processing image: 456_rain.png
+PSNR is 30.1427 and SSIM is 0.9400
+Processing image: 457_rain.png
+PSNR is 27.1753 and SSIM is 0.8955
+Processing image: 458_rain.png
+PSNR is 23.0374 and SSIM is 0.8392
+Processing image: 459_rain.png
+PSNR is 27.7106 and SSIM is 0.8809
+Processing image: 45_rain.png
+PSNR is 25.2202 and SSIM is 0.6814
+Processing image: 460_rain.png
+PSNR is 28.1788 and SSIM is 0.8916
+Processing image: 461_rain.png
+PSNR is 23.9470 and SSIM is 0.8355
+Processing image: 462_rain.png
+PSNR is 26.4584 and SSIM is 0.8596
+Processing image: 463_rain.png
+PSNR is 30.1951 and SSIM is 0.9109
+Processing image: 464_rain.png
+PSNR is 24.7166 and SSIM is 0.8166
+Processing image: 465_rain.png
+PSNR is 25.1069 and SSIM is 0.8512
+Processing image: 466_rain.png
+PSNR is 27.6015 and SSIM is 0.8387
+Processing image: 467_rain.png
+PSNR is 26.7987 and SSIM is 0.8671
+Processing image: 468_rain.png
+PSNR is 24.7174 and SSIM is 0.8821
+Processing image: 469_rain.png
+PSNR is 27.5291 and SSIM is 0.9006
+Processing image: 46_rain.png
+PSNR is 29.9456 and SSIM is 0.9301
+Processing image: 470_rain.png
+PSNR is 29.5494 and SSIM is 0.8988
+Processing image: 471_rain.png
+PSNR is 35.3339 and SSIM is 0.9921
+Processing image: 472_rain.png
+PSNR is 28.3337 and SSIM is 0.9025
+Processing image: 473_rain.png
+PSNR is 27.8448 and SSIM is 0.8873
+Processing image: 474_rain.png
+PSNR is 18.4824 and SSIM is 0.4480
+Processing image: 475_rain.png
+PSNR is 25.2789 and SSIM is 0.7783
+Processing image: 476_rain.png
+PSNR is 28.7783 and SSIM is 0.8436
+Processing image: 477_rain.png
+PSNR is 24.4384 and SSIM is 0.8723
+Processing image: 478_rain.png
+PSNR is 27.6397 and SSIM is 0.8640
+Processing image: 479_rain.png
+PSNR is 27.8059 and SSIM is 0.9165
+Processing image: 47_rain.png
+PSNR is 25.4762 and SSIM is 0.8540
+Processing image: 480_rain.png
+PSNR is 27.1709 and SSIM is 0.8483
+Processing image: 481_rain.png
+PSNR is 27.5376 and SSIM is 0.9098
+Processing image: 482_rain.png
+PSNR is 20.7157 and SSIM is 0.6407
+Processing image: 483_rain.png
+PSNR is 23.9338 and SSIM is 0.8488
+Processing image: 484_rain.png
+PSNR is 27.3077 and SSIM is 0.9127
+Processing image: 485_rain.png
+PSNR is 24.9889 and SSIM is 0.8434
+Processing image: 486_rain.png
+PSNR is 27.5097 and SSIM is 0.9102
+Processing image: 487_rain.png
+PSNR is 28.5438 and SSIM is 0.9189
+Processing image: 488_rain.png
+PSNR is 27.1743 and SSIM is 0.8622
+Processing image: 489_rain.png
+PSNR is 29.8398 and SSIM is 0.8856
+Processing image: 48_rain.png
+PSNR is 30.5711 and SSIM is 0.9100
+Processing image: 490_rain.png
+PSNR is 21.0209 and SSIM is 0.5570
+Processing image: 491_rain.png
+PSNR is 27.7012 and SSIM is 0.8844
+Processing image: 492_rain.png
+PSNR is 25.5549 and SSIM is 0.8754
+Processing image: 493_rain.png
+PSNR is 28.5228 and SSIM is 0.8880
+Processing image: 494_rain.png
+PSNR is 25.6390 and SSIM is 0.7623
+Processing image: 495_rain.png
+PSNR is 22.6550 and SSIM is 0.8843
+Processing image: 496_rain.png
+PSNR is 28.3105 and SSIM is 0.9034
+Processing image: 497_rain.png
+PSNR is 21.8117 and SSIM is 0.7899
+Processing image: 498_rain.png
+PSNR is 25.0220 and SSIM is 0.8630
+Processing image: 499_rain.png
+PSNR is 28.1370 and SSIM is 0.8926
+Processing image: 49_rain.png
+PSNR is 30.7857 and SSIM is 0.9202
+Processing image: 4_rain.png
+PSNR is 30.0583 and SSIM is 0.9503
+Processing image: 500_rain.png
+PSNR is 28.8070 and SSIM is 0.9203
+Processing image: 501_rain.png
+PSNR is 28.6930 and SSIM is 0.8974
+Processing image: 502_rain.png
+PSNR is 30.0697 and SSIM is 0.9262
+Processing image: 503_rain.png
+PSNR is 29.8415 and SSIM is 0.8060
+Processing image: 504_rain.png
+PSNR is 32.4358 and SSIM is 0.9632
+Processing image: 505_rain.png
+PSNR is 25.4218 and SSIM is 0.6071
+Processing image: 506_rain.png
+PSNR is 15.3871 and SSIM is 0.2380
+Processing image: 507_rain.png
+PSNR is 23.2505 and SSIM is 0.8626
+Processing image: 508_rain.png
+PSNR is 27.7733 and SSIM is 0.8751
+Processing image: 509_rain.png
+PSNR is 24.9134 and SSIM is 0.8516
+Processing image: 50_rain.png
+PSNR is 25.9044 and SSIM is 0.6732
+Processing image: 510_rain.png
+PSNR is 26.1910 and SSIM is 0.9038
+Processing image: 511_rain.png
+PSNR is 23.2407 and SSIM is 0.8496
+Processing image: 512_rain.png
+PSNR is 27.1256 and SSIM is 0.9226
+Processing image: 513_rain.png
+PSNR is 24.5375 and SSIM is 0.8424
+Processing image: 514_rain.png
+PSNR is 28.8301 and SSIM is 0.8940
+Processing image: 515_rain.png
+PSNR is 27.7547 and SSIM is 0.8604
+Processing image: 516_rain.png
+PSNR is 25.7554 and SSIM is 0.8411
+Processing image: 517_rain.png
+PSNR is 23.4094 and SSIM is 0.8250
+Processing image: 518_rain.png
+PSNR is 25.0741 and SSIM is 0.8014
+Processing image: 519_rain.png
+PSNR is 27.6624 and SSIM is 0.8884
+Processing image: 51_rain.png
+PSNR is 27.8711 and SSIM is 0.9002
+Processing image: 520_rain.png
+PSNR is 24.1746 and SSIM is 0.7279
+Processing image: 521_rain.png
+PSNR is 29.0882 and SSIM is 0.8869
+Processing image: 522_rain.png
+PSNR is 28.8282 and SSIM is 0.9248
+Processing image: 523_rain.png
+PSNR is 29.2063 and SSIM is 0.9198
+Processing image: 524_rain.png
+PSNR is 26.3305 and SSIM is 0.8936
+Processing image: 525_rain.png
+PSNR is 14.4816 and SSIM is 0.5457
+Processing image: 526_rain.png
+PSNR is 25.4727 and SSIM is 0.8440
+Processing image: 527_rain.png
+PSNR is 30.7184 and SSIM is 0.9214
+Processing image: 528_rain.png
+PSNR is 15.7544 and SSIM is 0.5286
+Processing image: 529_rain.png
+PSNR is 23.6183 and SSIM is 0.6766
+Processing image: 52_rain.png
+PSNR is 26.0307 and SSIM is 0.6600
+Processing image: 530_rain.png
+PSNR is 15.2822 and SSIM is 0.4802
+Processing image: 531_rain.png
+PSNR is 27.3151 and SSIM is 0.8901
+Processing image: 532_rain.png
+PSNR is 28.8377 and SSIM is 0.8832
+Processing image: 533_rain.png
+PSNR is 28.0834 and SSIM is 0.9240
+Processing image: 534_rain.png
+PSNR is 25.3815 and SSIM is 0.5353
+Processing image: 535_rain.png
+PSNR is 28.7508 and SSIM is 0.8926
+Processing image: 536_rain.png
+PSNR is 26.6985 and SSIM is 0.8629
+Processing image: 537_rain.png
+PSNR is 30.0523 and SSIM is 0.9177
+Processing image: 538_rain.png
+PSNR is 28.5069 and SSIM is 0.8714
+Processing image: 539_rain.png
+PSNR is 27.1600 and SSIM is 0.8758
+Processing image: 53_rain.png
+PSNR is 29.6426 and SSIM is 0.9178
+Processing image: 540_rain.png
+PSNR is 29.8023 and SSIM is 0.9287
+Processing image: 541_rain.png
+PSNR is 29.4610 and SSIM is 0.9477
+Processing image: 542_rain.png
+PSNR is 27.2127 and SSIM is 0.8770
+Processing image: 543_rain.png
+PSNR is 23.5513 and SSIM is 0.7977
+Processing image: 544_rain.png
+PSNR is 28.9790 and SSIM is 0.8896
+Processing image: 545_rain.png
+PSNR is 25.9767 and SSIM is 0.6330
+Processing image: 546_rain.png
+PSNR is 20.2927 and SSIM is 0.7383
+Processing image: 547_rain.png
+PSNR is 25.7090 and SSIM is 0.8898
+Processing image: 548_rain.png
+PSNR is 26.1437 and SSIM is 0.9030
+Processing image: 549_rain.png
+PSNR is 23.5770 and SSIM is 0.8056
+Processing image: 54_rain.png
+PSNR is 21.0496 and SSIM is 0.5091
+Processing image: 550_rain.png
+PSNR is 27.8863 and SSIM is 0.9199
+Processing image: 551_rain.png
+PSNR is 27.0337 and SSIM is 0.8932
+Processing image: 552_rain.png
+PSNR is 26.7214 and SSIM is 0.8613
+Processing image: 553_rain.png
+PSNR is 28.4621 and SSIM is 0.8709
+Processing image: 554_rain.png
+PSNR is 24.9235 and SSIM is 0.8643
+Processing image: 555_rain.png
+PSNR is 27.4875 and SSIM is 0.9015
+Processing image: 556_rain.png
+PSNR is 29.4315 and SSIM is 0.8697
+Processing image: 557_rain.png
+PSNR is 27.2865 and SSIM is 0.9000
+Processing image: 558_rain.png
+PSNR is 23.4158 and SSIM is 0.8261
+Processing image: 559_rain.png
+PSNR is 29.7925 and SSIM is 0.9225
+Processing image: 55_rain.png
+PSNR is 25.8879 and SSIM is 0.8980
+Processing image: 560_rain.png
+PSNR is 19.0928 and SSIM is 0.6315
+Processing image: 561_rain.png
+PSNR is 25.6539 and SSIM is 0.8388
+Processing image: 562_rain.png
+PSNR is 26.8793 and SSIM is 0.8923
+Processing image: 563_rain.png
+PSNR is 27.7413 and SSIM is 0.8433
+Processing image: 564_rain.png
+PSNR is 25.3907 and SSIM is 0.8309
+Processing image: 565_rain.png
+PSNR is 29.0704 and SSIM is 0.9119
+Processing image: 566_rain.png
+PSNR is 28.1690 and SSIM is 0.9197
+Processing image: 567_rain.png
+PSNR is 28.5050 and SSIM is 0.9138
+Processing image: 568_rain.png
+PSNR is 24.1237 and SSIM is 0.8129
+Processing image: 569_rain.png
+PSNR is 24.3289 and SSIM is 0.8611
+Processing image: 56_rain.png
+PSNR is 28.0054 and SSIM is 0.8759
+Processing image: 570_rain.png
+PSNR is 22.7521 and SSIM is 0.6150
+Processing image: 571_rain.png
+PSNR is 28.4875 and SSIM is 0.9244
+Processing image: 572_rain.png
+PSNR is 23.4956 and SSIM is 0.8659
+Processing image: 573_rain.png
+PSNR is 25.7009 and SSIM is 0.8670
+Processing image: 574_rain.png
+PSNR is 22.9597 and SSIM is 0.4649
+Processing image: 575_rain.png
+PSNR is 24.5841 and SSIM is 0.8681
+Processing image: 576_rain.png
+PSNR is 27.2489 and SSIM is 0.8966
+Processing image: 577_rain.png
+PSNR is 24.9361 and SSIM is 0.8041
+Processing image: 578_rain.png
+PSNR is 25.2470 and SSIM is 0.8452
+Processing image: 579_rain.png
+PSNR is 26.0835 and SSIM is 0.8906
+Processing image: 57_rain.png
+PSNR is 28.3656 and SSIM is 0.9218
+Processing image: 580_rain.png
+PSNR is 27.0047 and SSIM is 0.9127
+Processing image: 581_rain.png
+PSNR is 25.0960 and SSIM is 0.8717
+Processing image: 582_rain.png
+PSNR is 28.5517 and SSIM is 0.8891
+Processing image: 583_rain.png
+PSNR is 20.3209 and SSIM is 0.6390
+Processing image: 584_rain.png
+PSNR is 25.7188 and SSIM is 0.7544
+Processing image: 585_rain.png
+PSNR is 15.5561 and SSIM is 0.3787
+Processing image: 586_rain.png
+PSNR is 28.1047 and SSIM is 0.8406
+Processing image: 587_rain.png
+PSNR is 29.2129 and SSIM is 0.9318
+Processing image: 588_rain.png
+PSNR is 23.4336 and SSIM is 0.7529
+Processing image: 589_rain.png
+PSNR is 26.2352 and SSIM is 0.8746
+Processing image: 58_rain.png
+PSNR is 26.7242 and SSIM is 0.8846
+Processing image: 590_rain.png
+PSNR is 27.3204 and SSIM is 0.8451
+Processing image: 591_rain.png
+PSNR is 28.7297 and SSIM is 0.9258
+Processing image: 592_rain.png
+PSNR is 30.9902 and SSIM is 0.9052
+Processing image: 593_rain.png
+PSNR is 26.4291 and SSIM is 0.8740
+Processing image: 594_rain.png
+PSNR is 27.7613 and SSIM is 0.8669
+Processing image: 595_rain.png
+PSNR is 25.3725 and SSIM is 0.8716
+Processing image: 596_rain.png
+PSNR is 29.5054 and SSIM is 0.8858
+Processing image: 597_rain.png
+PSNR is 26.9664 and SSIM is 0.9119
+Processing image: 598_rain.png
+PSNR is 24.6069 and SSIM is 0.8565
+Processing image: 599_rain.png
+PSNR is 27.7190 and SSIM is 0.8989
+Processing image: 59_rain.png
+PSNR is 24.3575 and SSIM is 0.8343
+Processing image: 5_rain.png
+PSNR is 23.9436 and SSIM is 0.7891
+Processing image: 600_rain.png
+PSNR is 28.5797 and SSIM is 0.9104
+Processing image: 601_rain.png
+PSNR is 29.0201 and SSIM is 0.9029
+Processing image: 602_rain.png
+PSNR is 27.6843 and SSIM is 0.8887
+Processing image: 603_rain.png
+PSNR is 26.0226 and SSIM is 0.8670
+Processing image: 604_rain.png
+PSNR is 27.7218 and SSIM is 0.9064
+Processing image: 605_rain.png
+PSNR is 22.9084 and SSIM is 0.8264
+Processing image: 606_rain.png
+PSNR is 27.1339 and SSIM is 0.9068
+Processing image: 607_rain.png
+PSNR is 29.7995 and SSIM is 0.9079
+Processing image: 608_rain.png
+PSNR is 26.4179 and SSIM is 0.8852
+Processing image: 609_rain.png
+PSNR is 28.7056 and SSIM is 0.8429
+Processing image: 60_rain.png
+PSNR is 26.1349 and SSIM is 0.8895
+Processing image: 610_rain.png
+PSNR is 24.8447 and SSIM is 0.8058
+Processing image: 611_rain.png
+PSNR is 25.4954 and SSIM is 0.8417
+Processing image: 612_rain.png
+PSNR is 28.5258 and SSIM is 0.8839
+Processing image: 613_rain.png
+PSNR is 28.1550 and SSIM is 0.8183
+Processing image: 614_rain.png
+PSNR is 29.2596 and SSIM is 0.9036
+Processing image: 615_rain.png
+PSNR is 26.3471 and SSIM is 0.8732
+Processing image: 616_rain.png
+PSNR is 28.9430 and SSIM is 0.9363
+Processing image: 617_rain.png
+PSNR is 26.9481 and SSIM is 0.9036
+Processing image: 618_rain.png
+PSNR is 29.3780 and SSIM is 0.9221
+Processing image: 619_rain.png
+PSNR is 16.8516 and SSIM is 0.5912
+Processing image: 61_rain.png
+PSNR is 30.1274 and SSIM is 0.9002
+Processing image: 620_rain.png
+PSNR is 22.7739 and SSIM is 0.8318
+Processing image: 621_rain.png
+PSNR is 28.6453 and SSIM is 0.9112
+Processing image: 622_rain.png
+PSNR is 16.3364 and SSIM is 0.5930
+Processing image: 623_rain.png
+PSNR is 25.5113 and SSIM is 0.6430
+Processing image: 624_rain.png
+PSNR is 24.2650 and SSIM is 0.8496
+Processing image: 625_rain.png
+PSNR is 20.2744 and SSIM is 0.6069
+Processing image: 626_rain.png
+PSNR is 30.9718 and SSIM is 0.9401
+Processing image: 627_rain.png
+PSNR is 22.8371 and SSIM is 0.7884
+Processing image: 628_rain.png
+PSNR is 26.8607 and SSIM is 0.8573
+Processing image: 629_rain.png
+PSNR is 16.4860 and SSIM is 0.4375
+Processing image: 62_rain.png
+PSNR is 29.5631 and SSIM is 0.9341
+Processing image: 630_rain.png
+PSNR is 29.1772 and SSIM is 0.8667
+Processing image: 631_rain.png
+PSNR is 24.6281 and SSIM is 0.8280
+Processing image: 632_rain.png
+PSNR is 25.7448 and SSIM is 0.8635
+Processing image: 633_rain.png
+PSNR is 31.1794 and SSIM is 0.9238
+Processing image: 634_rain.png
+PSNR is 35.4067 and SSIM is 0.9953
+Processing image: 635_rain.png
+PSNR is 27.5565 and SSIM is 0.8815
+Processing image: 636_rain.png
+PSNR is 24.6032 and SSIM is 0.8497
+Processing image: 637_rain.png
+PSNR is 26.7691 and SSIM is 0.8818
+Processing image: 638_rain.png
+PSNR is 24.2457 and SSIM is 0.4350
+Processing image: 639_rain.png
+PSNR is 13.8516 and SSIM is 0.5567
+Processing image: 63_rain.png
+PSNR is 27.4896 and SSIM is 0.8867
+Processing image: 640_rain.png
+PSNR is 29.1141 and SSIM is 0.9071
+Processing image: 641_rain.png
+PSNR is 30.0162 and SSIM is 0.9394
+Processing image: 642_rain.png
+PSNR is 25.7919 and SSIM is 0.8797
+Processing image: 643_rain.png
+PSNR is 24.2584 and SSIM is 0.8628
+Processing image: 644_rain.png
+PSNR is 20.5066 and SSIM is 0.8596
+Processing image: 645_rain.png
+PSNR is 22.9135 and SSIM is 0.7442
+Processing image: 646_rain.png
+PSNR is 26.4328 and SSIM is 0.8866
+Processing image: 647_rain.png
+PSNR is 26.9218 and SSIM is 0.8850
+Processing image: 648_rain.png
+PSNR is 18.8814 and SSIM is 0.5137
+Processing image: 649_rain.png
+PSNR is 25.7098 and SSIM is 0.8560
+Processing image: 64_rain.png
+PSNR is 25.8407 and SSIM is 0.8874
+Processing image: 650_rain.png
+PSNR is 26.2496 and SSIM is 0.8647
+Processing image: 651_rain.png
+PSNR is 21.3536 and SSIM is 0.6470
+Processing image: 652_rain.png
+PSNR is 25.1320 and SSIM is 0.8862
+Processing image: 653_rain.png
+PSNR is 22.7381 and SSIM is 0.7827
+Processing image: 654_rain.png
+PSNR is 30.1189 and SSIM is 0.8996
+Processing image: 655_rain.png
+PSNR is 29.3883 and SSIM is 0.8892
+Processing image: 656_rain.png
+PSNR is 28.0269 and SSIM is 0.9103
+Processing image: 657_rain.png
+PSNR is 28.0475 and SSIM is 0.8789
+Processing image: 658_rain.png
+PSNR is 24.9309 and SSIM is 0.8288
+Processing image: 659_rain.png
+PSNR is 25.9430 and SSIM is 0.8340
+Processing image: 65_rain.png
+PSNR is 26.7885 and SSIM is 0.8836
+Processing image: 660_rain.png
+PSNR is 27.8557 and SSIM is 0.8159
+Processing image: 661_rain.png
+PSNR is 29.0579 and SSIM is 0.8705
+Processing image: 662_rain.png
+PSNR is 28.2261 and SSIM is 0.9181
+Processing image: 663_rain.png
+PSNR is 26.8701 and SSIM is 0.8854
+Processing image: 664_rain.png
+PSNR is 25.5441 and SSIM is 0.8154
+Processing image: 665_rain.png
+PSNR is 25.5121 and SSIM is 0.8815
+Processing image: 666_rain.png
+PSNR is 27.7157 and SSIM is 0.8922
+Processing image: 667_rain.png
+PSNR is 27.5864 and SSIM is 0.9092
+Processing image: 668_rain.png
+PSNR is 28.8863 and SSIM is 0.8373
+Processing image: 669_rain.png
+PSNR is 21.5599 and SSIM is 0.8794
+Processing image: 66_rain.png
+PSNR is 28.3720 and SSIM is 0.8879
+Processing image: 670_rain.png
+PSNR is 26.4216 and SSIM is 0.8672
+Processing image: 671_rain.png
+PSNR is 27.9535 and SSIM is 0.6192
+Processing image: 672_rain.png
+PSNR is 29.6793 and SSIM is 0.9024
+Processing image: 673_rain.png
+PSNR is 31.0955 and SSIM is 0.9241
+Processing image: 674_rain.png
+PSNR is 25.5778 and SSIM is 0.8813
+Processing image: 675_rain.png
+PSNR is 24.5766 and SSIM is 0.8463
+Processing image: 676_rain.png
+PSNR is 25.5952 and SSIM is 0.7118
+Processing image: 677_rain.png
+PSNR is 25.7365 and SSIM is 0.8155
+Processing image: 678_rain.png
+PSNR is 19.3222 and SSIM is 0.5777
+Processing image: 679_rain.png
+PSNR is 27.9457 and SSIM is 0.9064
+Processing image: 67_rain.png
+PSNR is 26.6181 and SSIM is 0.8659
+Processing image: 680_rain.png
+PSNR is 25.9139 and SSIM is 0.8783
+Processing image: 681_rain.png
+PSNR is 29.3940 and SSIM is 0.9224
+Processing image: 682_rain.png
+PSNR is 28.6854 and SSIM is 0.9025
+Processing image: 683_rain.png
+PSNR is 31.7304 and SSIM is 0.8459
+Processing image: 684_rain.png
+PSNR is 25.8421 and SSIM is 0.8927
+Processing image: 685_rain.png
+PSNR is 26.0221 and SSIM is 0.8760
+Processing image: 686_rain.png
+PSNR is 26.5492 and SSIM is 0.8463
+Processing image: 687_rain.png
+PSNR is 26.6464 and SSIM is 0.8977
+Processing image: 688_rain.png
+PSNR is 27.0222 and SSIM is 0.8955
+Processing image: 689_rain.png
+PSNR is 26.7713 and SSIM is 0.9217
+Processing image: 68_rain.png
+PSNR is 25.8967 and SSIM is 0.9108
+Processing image: 690_rain.png
+PSNR is 25.9559 and SSIM is 0.8740
+Processing image: 691_rain.png
+PSNR is 29.7691 and SSIM is 0.8716
+Processing image: 692_rain.png
+PSNR is 29.3588 and SSIM is 0.8702
+Processing image: 693_rain.png
+PSNR is 28.0889 and SSIM is 0.8983
+Processing image: 694_rain.png
+PSNR is 28.5132 and SSIM is 0.9250
+Processing image: 695_rain.png
+PSNR is 28.5503 and SSIM is 0.9364
+Processing image: 696_rain.png
+PSNR is 27.6686 and SSIM is 0.8780
+Processing image: 697_rain.png
+PSNR is 26.2351 and SSIM is 0.8745
+Processing image: 698_rain.png
+PSNR is 29.6736 and SSIM is 0.9262
+Processing image: 699_rain.png
+PSNR is 27.0332 and SSIM is 0.8279
+Processing image: 69_rain.png
+PSNR is 29.1901 and SSIM is 0.8535
+Processing image: 6_rain.png
+PSNR is 29.8221 and SSIM is 0.9296
+Processing image: 700_rain.png
+PSNR is 19.0281 and SSIM is 0.7761
+Processing image: 701_rain.png
+PSNR is 26.9866 and SSIM is 0.8443
+Processing image: 702_rain.png
+PSNR is 31.0053 and SSIM is 0.9153
+Processing image: 703_rain.png
+PSNR is 27.6273 and SSIM is 0.8887
+Processing image: 704_rain.png
+PSNR is 17.2706 and SSIM is 0.6497
+Processing image: 705_rain.png
+PSNR is 30.7419 and SSIM is 0.9222
+Processing image: 706_rain.png
+PSNR is 28.3578 and SSIM is 0.8781
+Processing image: 707_rain.png
+PSNR is 28.4958 and SSIM is 0.9053
+Processing image: 708_rain.png
+PSNR is 30.9908 and SSIM is 0.9578
+Processing image: 709_rain.png
+PSNR is 24.0351 and SSIM is 0.4812
+Processing image: 70_rain.png
+PSNR is 16.4880 and SSIM is 0.6251
+Processing image: 710_rain.png
+PSNR is 28.0565 and SSIM is 0.8271
+Processing image: 711_rain.png
+PSNR is 29.1499 and SSIM is 0.9206
+Processing image: 712_rain.png
+PSNR is 22.6608 and SSIM is 0.7336
+Processing image: 713_rain.png
+PSNR is 27.0333 and SSIM is 0.8838
+Processing image: 714_rain.png
+PSNR is 27.0417 and SSIM is 0.8827
+Processing image: 715_rain.png
+PSNR is 24.6216 and SSIM is 0.5546
+Processing image: 716_rain.png
+PSNR is 28.5520 and SSIM is 0.9186
+Processing image: 717_rain.png
+PSNR is 28.4899 and SSIM is 0.8727
+Processing image: 718_rain.png
+PSNR is 30.3044 and SSIM is 0.8999
+Processing image: 719_rain.png
+PSNR is 29.5389 and SSIM is 0.9189
+Processing image: 71_rain.png
+PSNR is 15.6339 and SSIM is 0.5646
+Processing image: 720_rain.png
+PSNR is 24.7798 and SSIM is 0.9054
+Processing image: 721_rain.png
+PSNR is 21.2853 and SSIM is 0.7372
+Processing image: 722_rain.png
+PSNR is 23.6398 and SSIM is 0.7514
+Processing image: 723_rain.png
+PSNR is 25.2216 and SSIM is 0.8229
+Processing image: 724_rain.png
+PSNR is 28.4168 and SSIM is 0.8818
+Processing image: 725_rain.png
+PSNR is 30.7095 and SSIM is 0.9282
+Processing image: 726_rain.png
+PSNR is 21.6985 and SSIM is 0.8332
+Processing image: 727_rain.png
+PSNR is 26.7026 and SSIM is 0.8975
+Processing image: 728_rain.png
+PSNR is 27.9864 and SSIM is 0.8777
+Processing image: 729_rain.png
+PSNR is 29.6562 and SSIM is 0.9107
+Processing image: 72_rain.png
+PSNR is 26.6005 and SSIM is 0.8687
+Processing image: 730_rain.png
+PSNR is 24.2406 and SSIM is 0.8885
+Processing image: 731_rain.png
+PSNR is 26.5371 and SSIM is 0.8494
+Processing image: 732_rain.png
+PSNR is 25.0878 and SSIM is 0.8539
+Processing image: 733_rain.png
+PSNR is 28.0516 and SSIM is 0.9154
+Processing image: 734_rain.png
+PSNR is 22.2860 and SSIM is 0.8266
+Processing image: 735_rain.png
+PSNR is 26.8654 and SSIM is 0.8627
+Processing image: 736_rain.png
+PSNR is 22.1229 and SSIM is 0.5933
+Processing image: 737_rain.png
+PSNR is 28.4922 and SSIM is 0.8843
+Processing image: 738_rain.png
+PSNR is 28.3821 and SSIM is 0.8634
+Processing image: 739_rain.png
+PSNR is 21.9338 and SSIM is 0.5345
+Processing image: 73_rain.png
+PSNR is 28.6292 and SSIM is 0.8988
+Processing image: 740_rain.png
+PSNR is 28.3114 and SSIM is 0.9174
+Processing image: 741_rain.png
+PSNR is 26.6732 and SSIM is 0.8566
+Processing image: 742_rain.png
+PSNR is 28.0810 and SSIM is 0.9311
+Processing image: 743_rain.png
+PSNR is 26.0980 and SSIM is 0.8442
+Processing image: 744_rain.png
+PSNR is 25.0957 and SSIM is 0.8821
+Processing image: 745_rain.png
+PSNR is 30.4017 and SSIM is 0.9261
+Processing image: 746_rain.png
+PSNR is 29.7414 and SSIM is 0.9045
+Processing image: 747_rain.png
+PSNR is 25.2963 and SSIM is 0.9031
+Processing image: 748_rain.png
+PSNR is 26.0167 and SSIM is 0.8336
+Processing image: 749_rain.png
+PSNR is 25.2867 and SSIM is 0.7689
+Processing image: 74_rain.png
+PSNR is 23.7224 and SSIM is 0.6823
+Processing image: 750_rain.png
+PSNR is 27.8178 and SSIM is 0.8931
+Processing image: 751_rain.png
+PSNR is 29.7741 and SSIM is 0.8814
+Processing image: 752_rain.png
+PSNR is 19.8059 and SSIM is 0.5724
+Processing image: 753_rain.png
+PSNR is 29.7680 and SSIM is 0.9007
+Processing image: 754_rain.png
+PSNR is 23.5489 and SSIM is 0.5151
+Processing image: 755_rain.png
+PSNR is 29.3715 and SSIM is 0.8229
+Processing image: 756_rain.png
+PSNR is 27.1874 and SSIM is 0.7401
+Processing image: 757_rain.png
+PSNR is 30.1516 and SSIM is 0.9112
+Processing image: 758_rain.png
+PSNR is 27.3857 and SSIM is 0.8907
+Processing image: 759_rain.png
+PSNR is 30.3736 and SSIM is 0.9205
+Processing image: 75_rain.png
+PSNR is 23.3455 and SSIM is 0.8078
+Processing image: 760_rain.png
+PSNR is 30.1047 and SSIM is 0.9116
+Processing image: 761_rain.png
+PSNR is 29.5075 and SSIM is 0.9097
+Processing image: 762_rain.png
+PSNR is 29.3530 and SSIM is 0.8833
+Processing image: 763_rain.png
+PSNR is 30.2166 and SSIM is 0.9302
+Processing image: 764_rain.png
+PSNR is 16.3219 and SSIM is 0.5196
+Processing image: 765_rain.png
+PSNR is 28.9457 and SSIM is 0.9275
+Processing image: 766_rain.png
+PSNR is 23.5390 and SSIM is 0.5343
+Processing image: 767_rain.png
+PSNR is 21.5317 and SSIM is 0.7321
+Processing image: 768_rain.png
+PSNR is 27.0576 and SSIM is 0.9007
+Processing image: 769_rain.png
+PSNR is 28.1413 and SSIM is 0.9172
+Processing image: 76_rain.png
+PSNR is 26.4450 and SSIM is 0.9157
+Processing image: 770_rain.png
+PSNR is 30.0780 and SSIM is 0.8750
+Processing image: 771_rain.png
+PSNR is 23.3495 and SSIM is 0.8630
+Processing image: 772_rain.png
+PSNR is 29.7333 and SSIM is 0.9210
+Processing image: 773_rain.png
+PSNR is 27.0217 and SSIM is 0.8815
+Processing image: 774_rain.png
+PSNR is 27.7318 and SSIM is 0.8630
+Processing image: 775_rain.png
+PSNR is 24.0965 and SSIM is 0.8072
+Processing image: 776_rain.png
+PSNR is 23.9964 and SSIM is 0.6267
+Processing image: 777_rain.png
+PSNR is 27.6989 and SSIM is 0.9229
+Processing image: 778_rain.png
+PSNR is 27.4798 and SSIM is 0.8960
+Processing image: 779_rain.png
+PSNR is 26.7259 and SSIM is 0.8825
+Processing image: 77_rain.png
+PSNR is 26.3902 and SSIM is 0.8825
+Processing image: 780_rain.png
+PSNR is 29.0298 and SSIM is 0.8598
+Processing image: 781_rain.png
+PSNR is 25.3041 and SSIM is 0.8652
+Processing image: 782_rain.png
+PSNR is 27.6813 and SSIM is 0.8682
+Processing image: 783_rain.png
+PSNR is 29.6969 and SSIM is 0.8484
+Processing image: 784_rain.png
+PSNR is 28.1494 and SSIM is 0.9079
+Processing image: 785_rain.png
+PSNR is 25.1360 and SSIM is 0.8661
+Processing image: 786_rain.png
+PSNR is 26.1454 and SSIM is 0.7663
+Processing image: 787_rain.png
+PSNR is 26.4310 and SSIM is 0.8762
+Processing image: 788_rain.png
+PSNR is 25.0138 and SSIM is 0.8615
+Processing image: 789_rain.png
+PSNR is 25.3507 and SSIM is 0.8191
+Processing image: 78_rain.png
+PSNR is 26.1065 and SSIM is 0.8624
+Processing image: 790_rain.png
+PSNR is 23.8679 and SSIM is 0.8057
+Processing image: 791_rain.png
+PSNR is 27.2188 and SSIM is 0.9025
+Processing image: 792_rain.png
+PSNR is 26.6870 and SSIM is 0.9054
+Processing image: 793_rain.png
+PSNR is 26.3335 and SSIM is 0.8426
+Processing image: 794_rain.png
+PSNR is 22.4841 and SSIM is 0.6689
+Processing image: 795_rain.png
+PSNR is 29.7015 and SSIM is 0.8974
+Processing image: 796_rain.png
+PSNR is 27.2712 and SSIM is 0.9020
+Processing image: 797_rain.png
+PSNR is 28.4159 and SSIM is 0.9132
+Processing image: 798_rain.png
+PSNR is 25.2737 and SSIM is 0.8432
+Processing image: 799_rain.png
+PSNR is 23.5226 and SSIM is 0.8887
+Processing image: 79_rain.png
+PSNR is 20.1537 and SSIM is 0.6276
+Processing image: 7_rain.png
+PSNR is 26.7052 and SSIM is 0.8952
+Processing image: 800_rain.png
+PSNR is 23.6126 and SSIM is 0.8627
+Processing image: 801_rain.png
+PSNR is 25.3510 and SSIM is 0.8560
+Processing image: 802_rain.png
+PSNR is 20.1526 and SSIM is 0.7048
+Processing image: 803_rain.png
+PSNR is 25.5441 and SSIM is 0.8901
+Processing image: 804_rain.png
+PSNR is 27.6502 and SSIM is 0.9305
+Processing image: 805_rain.png
+PSNR is 24.6049 and SSIM is 0.7344
+Processing image: 806_rain.png
+PSNR is 30.0161 and SSIM is 0.9699
+Processing image: 807_rain.png
+PSNR is 27.6257 and SSIM is 0.8845
+Processing image: 808_rain.png
+PSNR is 28.8996 and SSIM is 0.9028
+Processing image: 809_rain.png
+PSNR is 29.1809 and SSIM is 0.6824
+Processing image: 80_rain.png
+PSNR is 25.9985 and SSIM is 0.8422
+Processing image: 810_rain.png
+PSNR is 30.7166 and SSIM is 0.9222
+Processing image: 811_rain.png
+PSNR is 19.0973 and SSIM is 0.6151
+Processing image: 812_rain.png
+PSNR is 29.4341 and SSIM is 0.8656
+Processing image: 813_rain.png
+PSNR is 28.3096 and SSIM is 0.8777
+Processing image: 814_rain.png
+PSNR is 28.1212 and SSIM is 0.8520
+Processing image: 815_rain.png
+PSNR is 29.3166 and SSIM is 0.8917
+Processing image: 816_rain.png
+PSNR is 22.5814 and SSIM is 0.5384
+Processing image: 817_rain.png
+PSNR is 27.2772 and SSIM is 0.8120
+Processing image: 818_rain.png
+PSNR is 25.3046 and SSIM is 0.8522
+Processing image: 819_rain.png
+PSNR is 24.5483 and SSIM is 0.8527
+Processing image: 81_rain.png
+PSNR is 27.5830 and SSIM is 0.8980
+Processing image: 820_rain.png
+PSNR is 26.0668 and SSIM is 0.8314
+Processing image: 821_rain.png
+PSNR is 29.0802 and SSIM is 0.8951
+Processing image: 822_rain.png
+PSNR is 29.4857 and SSIM is 0.7811
+Processing image: 823_rain.png
+PSNR is 28.0249 and SSIM is 0.8692
+Processing image: 824_rain.png
+PSNR is 29.0382 and SSIM is 0.8843
+Processing image: 825_rain.png
+PSNR is 25.2281 and SSIM is 0.8223
+Processing image: 826_rain.png
+PSNR is 25.5587 and SSIM is 0.8874
+Processing image: 827_rain.png
+PSNR is 25.4884 and SSIM is 0.8461
+Processing image: 828_rain.png
+PSNR is 28.5640 and SSIM is 0.8877
+Processing image: 829_rain.png
+PSNR is 15.1948 and SSIM is 0.6415
+Processing image: 82_rain.png
+PSNR is 26.4504 and SSIM is 0.8832
+Processing image: 830_rain.png
+PSNR is 29.6236 and SSIM is 0.9193
+Processing image: 831_rain.png
+PSNR is 24.7511 and SSIM is 0.7906
+Processing image: 832_rain.png
+PSNR is 28.1632 and SSIM is 0.8876
+Processing image: 833_rain.png
+PSNR is 28.2328 and SSIM is 0.8867
+Processing image: 834_rain.png
+PSNR is 28.6427 and SSIM is 0.8573
+Processing image: 835_rain.png
+PSNR is 29.0327 and SSIM is 0.8776
+Processing image: 836_rain.png
+PSNR is 25.0636 and SSIM is 0.8934
+Processing image: 837_rain.png
+PSNR is 28.2973 and SSIM is 0.6766
+Processing image: 838_rain.png
+PSNR is 27.6852 and SSIM is 0.8588
+Processing image: 839_rain.png
+PSNR is 28.2184 and SSIM is 0.8973
+Processing image: 83_rain.png
+PSNR is 21.9210 and SSIM is 0.4893
+Processing image: 840_rain.png
+PSNR is 30.1824 and SSIM is 0.9054
+Processing image: 841_rain.png
+PSNR is 22.7868 and SSIM is 0.7167
+Processing image: 842_rain.png
+PSNR is 28.1615 and SSIM is 0.9087
+Processing image: 843_rain.png
+PSNR is 25.2752 and SSIM is 0.8641
+Processing image: 844_rain.png
+PSNR is 29.8808 and SSIM is 0.9118
+Processing image: 845_rain.png
+PSNR is 14.1048 and SSIM is 0.3788
+Processing image: 846_rain.png
+PSNR is 28.2158 and SSIM is 0.8802
+Processing image: 847_rain.png
+PSNR is 29.4344 and SSIM is 0.8736
+Processing image: 848_rain.png
+PSNR is 28.1752 and SSIM is 0.8346
+Processing image: 849_rain.png
+PSNR is 27.3915 and SSIM is 0.9104
+Processing image: 84_rain.png
+PSNR is 28.4696 and SSIM is 0.8995
+Processing image: 850_rain.png
+PSNR is 25.9122 and SSIM is 0.8450
+Processing image: 851_rain.png
+PSNR is 25.6858 and SSIM is 0.7468
+Processing image: 852_rain.png
+PSNR is 27.2338 and SSIM is 0.8440
+Processing image: 853_rain.png
+PSNR is 26.4560 and SSIM is 0.8778
+Processing image: 854_rain.png
+PSNR is 27.8200 and SSIM is 0.8922
+Processing image: 855_rain.png
+PSNR is 31.0341 and SSIM is 0.9230
+Processing image: 856_rain.png
+PSNR is 28.9572 and SSIM is 0.9339
+Processing image: 857_rain.png
+PSNR is 27.3047 and SSIM is 0.8710
+Processing image: 858_rain.png
+PSNR is 24.9119 and SSIM is 0.8463
+Processing image: 859_rain.png
+PSNR is 25.5047 and SSIM is 0.8169
+Processing image: 85_rain.png
+PSNR is 25.2787 and SSIM is 0.8532
+Processing image: 860_rain.png
+PSNR is 29.6100 and SSIM is 0.9229
+Processing image: 86_rain.png
+PSNR is 27.1601 and SSIM is 0.8628
+Processing image: 87_rain.png
+PSNR is 28.7937 and SSIM is 0.8495
+Processing image: 88_rain.png
+PSNR is 26.1750 and SSIM is 0.8951
+Processing image: 89_rain.png
+PSNR is 28.6249 and SSIM is 0.8954
+Processing image: 8_rain.png
+PSNR is 30.2887 and SSIM is 0.9149
+Processing image: 90_rain.png
+PSNR is 28.8855 and SSIM is 0.9265
+Processing image: 91_rain.png
+PSNR is 24.8220 and SSIM is 0.8373
+Processing image: 92_rain.png
+PSNR is 24.5125 and SSIM is 0.8902
+Processing image: 93_rain.png
+PSNR is 25.2213 and SSIM is 0.8549
+Processing image: 94_rain.png
+PSNR is 26.1874 and SSIM is 0.8383
+Processing image: 95_rain.png
+PSNR is 25.8176 and SSIM is 0.8687
+Processing image: 96_rain.png
+PSNR is 27.6389 and SSIM is 0.8919
+Processing image: 97_rain.png
+PSNR is 26.4581 and SSIM is 0.9033
+Processing image: 98_rain.png
+PSNR is 29.5900 and SSIM is 0.8554
+Processing image: 99_rain.png
+PSNR is 29.5045 and SSIM is 0.9159
+Processing image: 9_rain.png
+PSNR is 22.7634 and SSIM is 0.4820
+In testing dataset, PSNR is 26.4346 and SSIM is 0.8361
+              psnr        ssim
+总数      861.000000  861.000000
+最小值      13.851587    0.237977
+最小值位置   598.000000  451.000000
+25%分位数   25.063587    0.826650
+中位数      26.860668    0.871835
+75%分位数   28.499854    0.899628
+均值       26.434606    0.836090
+最大值      41.226461    0.995253
+最大值位数   112.000000  593.000000
+平均绝对偏差    2.311787    0.075347
+方差        9.988155    0.012008
+标准差       3.160404    0.109583
+偏度       -1.117729   -2.146139
+峰度        3.067683    4.901613

@@ -15,6 +15,8 @@ import os
 import sys
 import argparse
 from os.path import join as opj
+import pandas as pd
+import pickle as pkl
 
 from tensorboardX import SummaryWriter
 
@@ -29,6 +31,7 @@ from metrics import calc_psnr, calc_ssim,psnr_ssim_metric
 from losses import GeneratorLoss,DiscriminatorLoss
 # Tranforms lib
 from utils.transforms import demo_transform1,demo_transform2,image_align
+from utils.funcs import status
 # from pytorch.models import Discriminator,Generator
 # from pytorch.dataset import RainDataSet
 # from pytorch.metrics import calc_psnr, calc_ssim, SSIM, PSNR
@@ -39,8 +42,10 @@ def get_args():
     parser = argparse.ArgumentParser()
     parser.add_argument("--train",action='store_true',help='train model')
     parser.add_argument("--predict",action='store_true',help='predict the result')
+    parser.add_argument("--split",action='store_true',help='split the result')
     parser.add_argument("--gpu",type=str,default='0',help='specify gou devices')
     parser.add_argument("--mode", type=str,default='demo',choices=['demo','test','continue'])
+    parser.add_argument("--prepare",action='store_true',help='prepare the mask')
 
     train_settings = parser.add_argument_group('train settings')
     train_settings.add_argument('--optim', default='Adam',
@@ -63,12 +68,21 @@ def get_args():
                                 help='calculate metrics(RMSE,PSNR) every n steps.')
     train_settings.add_argument('--evaluate_every', type=int, default=10,
                                 help='evaluate the model every n epochs.')
+    train_settings.add_argument('--save_every', type=int, default=5,
+                                help='save the model every n epochs.')
 
     path_settings = parser.add_argument_group('path settings')
     parser.add_argument("--input_dir", type=str,default="../data/demo/train/raw")
     parser.add_argument("--gt_dir", type=str,default="../data/demo/train/gt")
     parser.add_argument("--mask_dir", type=str,default="../data/demo/train/mask")
     parser.add_argument("--output_dir", type=str,default="../data/demo/train/output")
+
+    parser.add_argument("--test_input_dir", type=str,default="../data/raindrop_data/test_a/raw")
+    parser.add_argument("--test_gt_dir", type=str,default="../data/raindrop_data/test_a/gt")
+    parser.add_argument("--test_mask_dir", type=str,default="../data/raindrop_data/test_a/mask")
+    parser.add_argument("--test_output_dir", type=str,default="../data/raindrop_data/test_a/output")
+    
+    parser.add_argument("--split_dir", type=str,default="../data/ssim_split")
     parser.add_argument("--model_dir",type=str, default="weights",
                         help= "the dir to store the model(weights) after train progress.")
     parser.add_argument("--g_weights",type=str,default="gen.pkl",
@@ -139,7 +153,7 @@ def train_epoch(model:tuple, optimizer:tuple, dataloader:DataLoader,epoch, crite
                 # print(gt_data.size())
                 # print(g_output.size())
                 
-                psnr_loss,ssim_loss = metric(gt_data,g_output.detach())
+                psnr_loss,ssim_loss = metric(gt_data,g_output.detach_())
                 print('epoch {}, [{}/{}], loss ({},{}), PSNR {}, SSIM {},'.format
                 (epoch, i, data_num, g_loss.data,d_loss.data, psnr_loss, ssim_loss))
                 if writer is not None:
@@ -161,9 +175,6 @@ def train(args):
         discriminate_model = discriminate_model.load_state_dict(torch.load(opj(args.model_dir,args.d_weights)))
     model = (generate_model,discriminate_model)
 
-    # i_transform = demo_input_transform()
-    # t_transform = demo_target_transform()
-
     train_data = RainDataSet(args.input_dir,args.gt_dir,args.mask_dir)
     train_loader = DataLoader(train_data,batch_size=args.batch_size,shuffle=True,num_workers=0)
     # test_data = data.get_test()
@@ -181,11 +192,6 @@ def train(args):
     D_criterion = DiscriminatorLoss()
     criterion = (G_criterion,D_criterion)
 
-    # ssim_criterion = SSIM()
-    # psnr_criterion = PSNR()
-    # ssim_criterion = calc_psnr
-    # psnr_criterion = calc_ssim
-    # metric = (ssim_criterion,psnr_criterion)
     metric = psnr_ssim_metric
 
     summary_file = 'DRNet_{}_{}_{}_{}_{}'.format(args.learning_rate, args.weight_decay,
@@ -193,7 +199,8 @@ def train(args):
     summary_path = opj(args.summary_dir,summary_file)
     print("The summary is stored in {}".format(summary_path))
     writer = SummaryWriter(summary_path)
-
+    best_ssim=0
+    best_psnr=0
     for epoch in range(args.epochs):
         start_time = time.time()
         # metric[0].reset()
@@ -207,12 +214,55 @@ def train(args):
         loss1,loss2,acc1,acc2 = train_epoch(model,optimizer,train_loader,epoch,criterion,metric,args,writer=writer)
         print("Train_epoch_{:d} : G_Loss= {:.5f}; D_Loss= {:.5f}; SSIM= {:.5f}; PSNR= {:.5f}".format(epoch,loss1.data,loss2.data,acc1,acc2))
         if epoch % args.evaluate_every:
-            evaluate(model,args)
-
-
+            ssim,psnr = evaluate(generate_model,args)
+            if (ssim > best_ssim) or (ssim == best_ssim and psnr>best_psnr):
+                best_ssim = ssim
+                best_psnr = psnr
+                print("Get better model.")
+                g_path = opj(args.model_dir,"gen_best")
+                d_path = opj(args.model_dir,"dis_best")
+                torch.save(generate_model.state_dict(),g_path)
+                torch.save(discriminate_model.state_dict(),d_path)
+                
+            pass
+        if epoch % args.save_every:
+            g_path = opj(args.model_dir,"gen_{}".format(epoch))
+            torch.save(generate_model.state_dict(),g_path)
+            d_path = opj(args.model_dir,"dis_{}".format(epoch))
+            torch.save(discriminate_model.state_dict(),d_path)
+            print("Model saved in epoch_{}".format(epoch))
+        
 def evaluate(model,args):
-    print("Not Implement Error.")
-    pass
+    input_list = sorted(os.listdir(args.test_input_dir))
+    gt_list = sorted(os.listdir(args.test_gt_dir))
+    num = len(input_list)
+    cumulative_psnr = 0
+    cumulative_ssim = 0
+    psnr_list = []
+    ssim_list = []
+    for i in range(num):
+        prefix = input_list[i].split('_')[0]
+        print ('Processing image: %s'%(input_list[i]))
+        img = cv2.imread(opj(args.test_input_dir , input_list[i]))
+        gt = cv2.imread(opj(args.test_gt_dir , gt_list[i]))
+        img = image_align(img)
+        gt = image_align(gt)
+        result = predict_single(model,img)
+        result = np.array(result, dtype = 'uint8')
+        cur_psnr = calc_psnr(result, gt)
+        cur_ssim = calc_ssim(result, gt)
+        print('PSNR is %.4f and SSIM is %.4f'%(cur_psnr, cur_ssim))
+        cumulative_psnr += cur_psnr
+        cumulative_ssim += cur_ssim
+        psnr_list.append(cur_psnr)
+        ssim_list.append(cur_ssim)
+        out_name = prefix+"_"+"output.png"
+        cv2.imwrite( opj( args.test_output_dir,out_name), result )
+    print('In testing dataset, PSNR is %.4f and SSIM is %.4f'%(cumulative_psnr/num, cumulative_ssim/num))
+    df = pd.DataFrame(np.array([psnr_list,ssim_list]).T, columns=['psnr','ssim'])
+    df.head()
+    print(df.apply(status))
+    return np.mean(ssim_list) , np.mean(psnr_list)
 
 
 def predict_single(model,image):
@@ -250,34 +300,113 @@ def predict(args):
         num = len(input_list)
         cumulative_psnr = 0
         cumulative_ssim = 0
+        psnr_list = []
+        ssim_list = []
         for i in range(num):
             print ('Processing image: %s'%(input_list[i]))
             img = cv2.imread(opj(args.input_dir , input_list[i]))
             gt = cv2.imread(opj(args.gt_dir , gt_list[i]))
             img = image_align(img)
             gt = image_align(gt)
-            result = predict(img)
+            result = predict_single(model,img)
             result = np.array(result, dtype = 'uint8')
             cur_psnr = calc_psnr(result, gt)
             cur_ssim = calc_ssim(result, gt)
             print('PSNR is %.4f and SSIM is %.4f'%(cur_psnr, cur_ssim))
             cumulative_psnr += cur_psnr
             cumulative_ssim += cur_ssim
+            psnr_list.append(cur_psnr)
+            ssim_list.append(cur_ssim)
         print('In testing dataset, PSNR is %.4f and SSIM is %.4f'%(cumulative_psnr/num, cumulative_ssim/num))
-
+        with open ('../try/psnr_list','wb') as fout:
+            fout.write(pkl.dumps(psnr_list))
+        with open ('../try/ssim_list','wb') as fout:
+            fout.write(pkl.dumps(ssim_list))
+        df = pd.DataFrame(np.array([psnr_list,ssim_list]).T, columns=['psnr','ssim'])
+        df.head()
+        print(df.apply(status))
     else:
         print ('Mode Invalid!')
-    pass
 
+
+def get_path(dir,home:str):
+    path = opj(dir,home)
+    if not os.path.exists(path):
+        os.mkdir(path)
+    return path
+
+def write_interval(interval_dir,prefix,img,gt,result):
+    raw_name = prefix+"_"+"input.png"
+    gt_name = prefix+"_"+"gt.png"
+    out_name = prefix+"_"+"output.png"
+    cv2.imwrite( opj( get_path(interval_dir,'input'), raw_name), img )
+    cv2.imwrite( opj( get_path(interval_dir,'gt'), gt_name), gt )
+    cv2.imwrite( opj( get_path(interval_dir,'output'), out_name), result )
+
+def split_result(args):
+    # split the result with ssim (0,0.5);(0.5,0.82);(0.82,0.87);(0.87,1.0)
+    split_point = [0.5, 0.82, 0.87]
+    model = Generator().cuda()
+    model.load_state_dict(torch.load(opj(args.model_dir, args.g_weights)))
+    input_list = sorted(os.listdir(args.input_dir))
+    gt_list = sorted(os.listdir(args.gt_dir))
+    num = len(input_list)
+    cumulative_psnr = 0
+    cumulative_ssim = 0
+
+    split_dir = args.split_dir
+    interval1 = opj(split_dir,'interval_1')
+    interval2 = opj(split_dir,'interval_2')
+    interval3 = opj(split_dir,'interval_3')
+    interval4 = opj(split_dir,'interval_4')
+    interval_dirs = [interval1,interval2,interval3,interval4]
+    for dir in interval_dirs:
+        if not os.path.exists(dir):
+            os.mkdir(dir)
+    for i in range(num):
+        print ('Processing image: %s'%(input_list[i]))
+        img = cv2.imread(opj(args.input_dir , input_list[i]))
+        gt = cv2.imread(opj(args.gt_dir , gt_list[i]))
+        img = image_align(img)
+        gt = image_align(gt)
+        result = predict_single(model,img)
+        result = np.array(result, dtype = 'uint8')
+        cur_psnr = calc_psnr(result, gt)
+        cur_ssim = calc_ssim(result, gt)
+        print('PSNR is %.4f and SSIM is %.4f'%(cur_psnr, cur_ssim))
+        cumulative_psnr += cur_psnr
+        cumulative_ssim += cur_ssim
+
+        prefix = input_list[i].split('_')[0]
+        if cur_ssim < split_point[0]:
+            write_interval(interval_dirs[0],prefix,img,gt,result)
+        elif cur_ssim < split_point[1]:
+            write_interval(interval_dirs[1],prefix,img,gt,result)
+        elif cur_ssim < split_point[2]:
+            write_interval(interval_dirs[2],prefix,img,gt,result)
+        else:
+            write_interval(interval_dirs[3],prefix,img,gt,result)
+
+
+    print('In testing dataset, PSNR is %.4f and SSIM is %.4f'%(cumulative_psnr/num, cumulative_ssim/num))
+
+def prepare(args):
+    print("Not implement error.")
 
 def run():
     args = get_args()
-
-    if args.train:
+    print("Running with args:{}".format(args))
+    os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
+    os.environ["CUDA_VISIBLE_DEVICES"] = args.gpu
+    if args.prepare:
+        prepare(args)
+    elif args.train:
         print("Trianning")
         train(args)
     elif args.predict:
         predict(args)
+    elif args.split:
+        split_result(args)
     else:
         print("You won't run.")
 
